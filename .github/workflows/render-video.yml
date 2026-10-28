@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
       
       - name: Install FFmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
@@ -32,11 +32,11 @@ jobs:
       
       - name: Check project
         working-directory: ./video
-        run: npm run check
+        run: npx --yes hyperframes@0.8.195 check
       
       - name: Render video
         working-directory: ./video
-        run: npm run render
+        run: npx --yes hyperframes@0.8.195 render
       
       - name: Upload render
         uses: actions/upload-artifact@v4
