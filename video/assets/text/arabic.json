@@ -1,0 +1,60 @@
+{
+  "note": "Live-text Arabic for scenes. Render as HTML text (dir=rtl, lang=ar, font-family Amiri then Noto Naskh Arabic, letter-spacing 0). Never as image or SVG outline. 'words' is the reveal order in reading order (first word is the rightmost).",
+  "verified": {
+    "source": "api.quran.com v4 (imlaei and uthmani scripts), fetched 2026-10-25",
+    "result": "23:1, 23:2 and 14:40 (first clause) match Script.txt word for word. Script.txt uses the simple (imlaei) spelling, which is what quran.com text_imlaei returns, so it is used as is.",
+    "not_quranic": ["salam", "allahu_akbar", "hayya", "alayhi_salam"]
+  },
+  "blocks": {
+    "salam": {
+      "scene": "02, 15",
+      "font": "Amiri 700, 140px, sand",
+      "text": "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+      "words": ["السَّلَامُ", "عَلَيْكُمْ", "وَرَحْمَةُ", "اللَّهِ"],
+      "script_form": "السلام عليكم ورحمة الله (no tashkeel in Script.txt; vowels added per SPEC full-tashkeel rule, standard greeting)"
+    },
+    "allahu_akbar": {
+      "scene": "02",
+      "font": "Amiri 700, 96px, sand",
+      "text": "اللَّهُ أَكْبَرُ",
+      "words": ["اللَّهُ", "أَكْبَرُ"]
+    },
+    "ayah_23_1_2": {
+      "scene": "03",
+      "font": "Amiri 700, 120px, gold, line-height 1.9",
+      "reference": "Quran 23:1-2",
+      "text": "قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۝ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ",
+      "lines": ["قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۝", "الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ"],
+      "words": ["قَدْ", "أَفْلَحَ", "الْمُؤْمِنُونَ", "الَّذِينَ", "هُمْ", "فِي", "صَلَاتِهِمْ", "خَاشِعُونَ"],
+      "verse_end_marker": "۝",
+      "word_count": 8,
+      "timing_window_s": [25.60, 30.88],
+      "translation": "Successful indeed are the believers, those who are humble in their prayer.",
+      "reference_card": "Quran 23:1–2"
+    },
+    "hayya": {
+      "scene": "06",
+      "font": "Amiri 700, 96px, sand",
+      "text": "حَيَّ عَلَى الصَّلَاةِ",
+      "words": ["حَيَّ", "عَلَى", "الصَّلَاةِ"],
+      "translation": "come to prayer"
+    },
+    "dua_14_40": {
+      "scene": "14",
+      "font": "Amiri 700, 104px, gold, line-height 1.9",
+      "reference": "Quran 14:40 (first clause)",
+      "text": "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِن ذُرِّيَّتِي",
+      "words": ["رَبِّ", "اجْعَلْنِي", "مُقِيمَ", "الصَّلَاةِ", "وَمِن", "ذُرِّيَّتِي"],
+      "word_count": 6,
+      "timing_window_s": [183.00, 188.65],
+      "translation": "My Lord, make me one who establishes prayer, and from my descendants.",
+      "note": "The verse continues after ذُرِّيَّتِي (ربنا وتقبل دعاء). The script and the VO stop here, and so does the poster. Do not add a verse-end marker."
+    },
+    "alayhi_salam": {
+      "scene": "14 (optional, only if shown; the VO says it but SPEC has no visual for it)",
+      "font": "Amiri 700, sand",
+      "text": "عَلَيْهِ السَّلَامُ",
+      "words": ["عَلَيْهِ", "السَّلَامُ"]
+    }
+  }
+}

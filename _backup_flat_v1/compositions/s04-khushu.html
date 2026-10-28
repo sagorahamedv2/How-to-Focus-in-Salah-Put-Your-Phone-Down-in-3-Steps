@@ -1,0 +1,121 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; direction: rtl; letter-spacing: 0; line-height: 1.9; white-space: nowrap; }
+      .ar span { display: inline-block; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s04-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    .s04-ring { position: absolute; left: 1640px; top: 430px; width: 200px; height: 200px; border-radius: 50%; border: 6px solid var(--alert); opacity: 0; }
+  </style>
+  <div data-hf-id="hf-tqar" id="root" data-composition-id="s04-khushu" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-l3nz" id="s04-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+
+      <!-- window with minaret -->
+      <div data-hf-id="hf-cpk0" class="abs" style="left:220px;top:130px;width:300px;height:430px;background:var(--sand-300);border-radius:150px 150px 8px 8px;"></div>
+      <div data-hf-id="hf-t8vm" class="abs" style="left:236px;top:146px;width:268px;height:398px;background:var(--emerald-950);border-radius:134px 134px 4px 4px;overflow:hidden;">
+        <div data-hf-id="hf-h9v6" class="abs" style="left:0;top:0;width:268px;height:398px;background:var(--emerald-800);opacity:0.9;"></div>
+        <svg data-hf-id="hf-u8nh" class="abs" style="left:94px;top:90px;" width="84" height="294" viewBox="0 0 120 420"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/><path data-hf-id="hf-jgm6" d="M60 350 q16 10 16 30 v40 h-32 v-40 q0 -20 16 -30z" fill="#0B3D33"/></svg>
+      </div>
+
+      <!-- lamp on the floor, warm breath -->
+      <div data-hf-id="hf-tlg5" id="s04-lampglow" class="abs glow" style="left:1490px;top:500px;width:620px;height:620px;opacity:0.5;"></div>
+      <svg data-hf-id="hf-4aku" class="abs" style="left:1700px;top:736px;" width="110" height="198" viewBox="0 0 200 360"><path data-hf-id="hf-g2tq" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-0ibg" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-xlwh" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+
+      <!-- prayer mat -->
+      <div data-hf-id="hf-4ce4" class="abs" style="left:640px;top:900px;width:640px;height:150px;">
+        <svg data-hf-id="hf-xfd4" width="640" height="150" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-exyd" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="6"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/><path data-hf-id="hf-t9lb" d="M260 100 q38 22 38 62 v70 h-76 v-70 q0 -40 38 -62z" fill="#14705C"/></svg>
+      </div>
+
+      <!-- shelf on the right, phone appears small -->
+      <div data-hf-id="hf-n884" class="abs" style="left:1560px;top:640px;width:240px;height:22px;background:var(--sand-500);border-radius:4px;"></div>
+      <div data-hf-id="hf-xb7e" class="abs" style="left:1590px;top:662px;width:14px;height:60px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-sw2n" class="abs" style="left:1760px;top:662px;width:14px;height:60px;background:var(--sand-500);"></div>
+
+      <!-- floor crack -->
+      <svg data-hf-id="hf-fmsx" class="abs" style="left:0;top:0;" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path data-hf-id="hf-46ry" id="s04-crack" d="M1600 892 L1540 930 L1572 962 L1456 1004 L1404 976 L1322 1040 M1456 1004 L1440 1060" pathLength="1" fill="none" stroke="#E26D4F" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" style="stroke-dasharray:1;stroke-dashoffset:1;"/>
+      </svg>
+
+      <!-- phone -->
+      <svg data-hf-id="hf-s1bq" id="s04-phone" class="abs" style="left:1620px;top:200px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-9s4l" id="s04-pglow" x="24" y="30" width="192" height="380" rx="24" fill="#FFD98A" opacity="0"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/><circle data-hf-id="hf-zzdm" id="s04-pdot" cx="196" cy="62" r="14" fill="#E26D4F" opacity="0"/></svg>
+
+      <!-- buzz rings -->
+      <div data-hf-id="hf-1pxe" data-layout-allow-overflow>
+        <div data-hf-id="hf-gv4q" class="s04-ring" id="s04-r0"></div><div data-hf-id="hf-kt8r" class="s04-ring" id="s04-r1"></div><div data-hf-id="hf-c5cw" class="s04-ring" id="s04-r2"></div>
+        <div data-hf-id="hf-cx0p" class="s04-ring" id="s04-r3"></div><div data-hf-id="hf-21j2" class="s04-ring" id="s04-r4"></div><div data-hf-id="hf-878v" class="s04-ring" id="s04-r5"></div>
+        <div data-hf-id="hf-vh8z" class="s04-ring" id="s04-hold"></div>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-wc8s" id="s04-c1" class="callout">Khushu = humility + presence</div>
+    <div data-hf-id="hf-43mu" id="s04-c2" class="callout">Remove the fight.</div>
+  </div>
+  <script>
+    // Host starts at frame 1160 (9 frames before the cut at 1169).
+    const O = 1160, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set("#s04-phone", { scale: 0.3, opacity: 0 });
+    gsap.set([".s04-ring"], { scale: 0.4, opacity: 0, transformOrigin: "50% 50%" });
+    gsap.set(["#s04-c1", "#s04-c2"], { y: 24 });
+
+    // Camera pull in (scale 1.06 -> 1) with a crossfade over the poster, then a calm 2% push
+    tl.fromTo("#s04-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.to("#s04-world", { scale: 1.02, duration: T(1671) - F(18), ease: "none" }, F(18));
+    tl.to("#s04-lampglow", { opacity: 0.85, duration: F(45), ease: BREATH, repeat: 10, yoyo: true }, 0);
+
+    // f1166 callout 1
+    tl.to("#s04-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(1166));
+    tl.to("#s04-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(1166 + 12 + 90));
+
+    // f1298 phone appears in the corner
+    tl.to("#s04-phone", { opacity: 1, scale: 0.5, duration: F(15), ease: SNAP }, T(1298));
+    tl.to("#s04-pglow", { opacity: 0.5, duration: F(15), ease: SETTLE }, T(1298));
+
+    // f1394 HERO "buzzing": phone shakes, alert rings expand and crack the calm
+    tl.to("#s04-pdot", { opacity: 1, duration: F(4) }, T(1394));
+    tl.to("#s04-phone", { x: 5, duration: F(2), ease: "none", repeat: 31, yoyo: true }, T(1394));
+    for (let i = 0; i < 6; i++) {
+      tl.fromTo("#s04-r" + i, { scale: 0.4, opacity: 0.85 }, { scale: 7, opacity: 0, duration: F(42), ease: "power2.out", immediateRender: false }, T(1394 + i * 12));
+    }
+    tl.to("#s04-crack", { strokeDashoffset: 0, duration: F(40), ease: "power2.out" }, T(1400));
+
+    // f1471 cracks stop, one ring holds frozen
+    tl.fromTo("#s04-hold", { scale: 3.2, opacity: 0 }, { scale: 3.2, opacity: 0.5, duration: F(10), ease: SETTLE, immediateRender: false }, T(1471));
+    // f1550 the ring tries to push back and fades (no fight)
+    tl.to("#s04-hold", { scale: 2.8, duration: F(20), ease: BREATH }, T(1550));
+    tl.to("#s04-hold", { opacity: 0, duration: F(24), ease: "power2.in" }, T(1556));
+
+    // f1617 "Remove the fight": alert drains from the phone
+    tl.to("#s04-pdot", { opacity: 0, duration: F(12), ease: EXIT }, T(1617));
+    tl.to("#s04-pglow", { opacity: 0, duration: F(24), ease: "power2.inOut" }, T(1617));
+    tl.to("#s04-crack", { opacity: 0.0, duration: F(24), ease: "power2.inOut" }, T(1620));
+    tl.to("#s04-c2", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(1617));
+    tl.to("#s04-c2", { opacity: 0, duration: F(10), ease: EXIT }, T(1617 + 12 + 24));
+
+    window.__timelines["s04-khushu"] = tl;
+  </script>
+</template>

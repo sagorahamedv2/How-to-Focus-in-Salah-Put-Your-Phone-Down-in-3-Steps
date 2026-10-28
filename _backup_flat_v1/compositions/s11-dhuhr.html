@@ -1,0 +1,116 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+    #s11-world { position: absolute; inset: 0; background: var(--emerald-800); transform-origin: 50% 50%; }
+    #s11-title { position: absolute; left: 192px; top: 250px; font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); opacity: 0; }
+    .s11-seg { position: absolute; top: 597px; height: 6px; border-radius: 3px; background: var(--sand-100); transform-origin: 0% 50%; }
+    .s11-dot { position: absolute; top: 580px; width: 40px; height: 40px; border-radius: 50%; background: var(--emerald-300); opacity: 0; }
+    .s11-lbl { position: absolute; top: 646px; width: 240px; text-align: center; font: 600 32px/1.2 "Inter", sans-serif; color: var(--sand-100); opacity: 0; }
+    .s11-icon { position: absolute; opacity: 0; }
+  </style>
+  <div data-hf-id="hf-2sha" id="root" data-composition-id="s11-dhuhr" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-ig8x" id="s11-world">
+      <!-- floor plan lines -->
+      <svg data-hf-id="hf-2rkd" class="abs" style="left:0;top:0;" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" stroke="#F4EAD5" stroke-opacity="0.16" stroke-width="3">
+        <rect data-hf-id="hf-og6m" x="96" y="108" width="1728" height="864"/><path data-hf-id="hf-7elr" d="M780 108 V420 M780 540 V972 M1380 108 V300 M1380 420 V972 M96 800 H700"/>
+      </svg>
+
+      <!-- ghost line with the gap between the first two ticks -->
+      <div data-hf-id="hf-xe6i" class="abs" style="left:258px;top:599px;width:1404px;height:2px;background:var(--sand-100);opacity:0.25;"></div>
+      <div data-hf-id="hf-444k" id="s11-gap" class="abs" style="left:300px;top:560px;width:380px;height:80px;border-radius:50%;background:radial-gradient(ellipse, rgba(127,196,174,0.7) 0%, rgba(127,196,174,0) 70%);opacity:0;"></div>
+
+      <div data-hf-id="hf-752w" id="s11-title">Dhuhr</div>
+
+      <div data-hf-id="hf-vqt2" class="s11-seg" id="s11-seg1" style="left:240px;width:480px;"></div>
+      <div data-hf-id="hf-cdt8" class="s11-seg" id="s11-seg2" style="left:720px;width:480px;"></div>
+      <div data-hf-id="hf-wj61" class="s11-seg" id="s11-seg3" style="left:1200px;width:480px;"></div>
+      <div data-hf-id="hf-4hkh" class="s11-dot" id="s11-dot1" style="left:220px;"></div>
+      <div data-hf-id="hf-pp0z" class="s11-dot" id="s11-dot2" style="left:700px;"></div>
+      <div data-hf-id="hf-kz6p" class="s11-dot" id="s11-dot3" style="left:1180px;"></div>
+      <div data-hf-id="hf-v7dj" class="s11-dot" id="s11-dot4" style="left:1660px;"></div>
+
+      <div data-hf-id="hf-l0z9" class="s11-lbl" id="s11-l1" style="left:120px;">−5 min</div>
+      <div data-hf-id="hf-ivtw" class="s11-lbl" id="s11-l2" style="left:600px;">Adhan</div>
+      <div data-hf-id="hf-iadx" class="s11-lbl" id="s11-l3" style="left:1080px;">Wudu</div>
+      <div data-hf-id="hf-7pjm" class="s11-lbl" id="s11-l4" style="left:1560px;">Pray</div>
+
+      <!-- icon 1: bag, the phone drops in -->
+      <svg data-hf-id="hf-cuvh" id="s11-phone" class="abs" style="left:210px;top:300px;opacity:0;" width="60" height="110" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-25an" x="92" y="38" width="56" height="10" rx="5" fill="#E3CFA6"/></svg>
+      <svg data-hf-id="hf-hbgj" id="s11-i1" class="s11-icon" style="left:180px;top:420px;" width="120" height="140" viewBox="0 0 120 140"><path data-hf-id="hf-ydvk" d="M36 30 q0 -22 24 -22 q24 0 24 22" fill="none" stroke="#B99A68" stroke-width="8" stroke-linecap="round"/><path data-hf-id="hf-2i8h" d="M14 40 h92 l-8 90 h-76z" fill="#B99A68"/><path data-hf-id="hf-85si" d="M14 40 h92 l-3 18 h-86z" fill="#E3CFA6"/></svg>
+      <!-- icon 2: minaret and a focus toggle -->
+      <svg data-hf-id="hf-vb5d" id="s11-i2" class="s11-icon" style="left:660px;top:420px;" width="84" height="140" viewBox="0 0 120 200"><path data-hf-id="hf-7lrg" d="M60 0 q10 12 10 22 h-20 q0 -10 10 -22z" fill="#E3CFA6"/><rect data-hf-id="hf-9c8h" x="48" y="22" width="24" height="26" fill="#E3CFA6"/><rect data-hf-id="hf-o007" x="36" y="48" width="48" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-ipyd" x="46" y="58" width="28" height="100" fill="#E3CFA6"/><rect data-hf-id="hf-ffyb" x="20" y="156" width="80" height="44" fill="#E3CFA6"/></svg>
+      <svg data-hf-id="hf-rdib" id="s11-tg" class="s11-icon" style="left:760px;top:500px;" width="104" height="54" viewBox="0 0 132 68"><rect data-hf-id="hf-t0h4" id="s11-tgt" x="4" y="4" width="124" height="60" rx="30" fill="#5B6B66"/><circle data-hf-id="hf-s0j6" id="s11-tgk" cx="34" cy="34" r="24" fill="#F4EAD5"/></svg>
+      <!-- icon 3: water drop -->
+      <svg data-hf-id="hf-dzrh" id="s11-i3" class="s11-icon" style="left:1160px;top:430px;" width="80" height="120" viewBox="0 0 120 170"><path data-hf-id="hf-opc7" d="M60 10 C60 10 14 74 14 112 a46 46 0 0 0 92 0 C106 74 60 10 60 10z" fill="#7FC4AE"/></svg>
+      <!-- icon 4: prayer mat -->
+      <svg data-hf-id="hf-2yat" id="s11-i4" class="s11-icon" style="left:1590px;top:450px;" width="180" height="100" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-f80c" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="10"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/></svg>
+    </div>
+
+    <div data-hf-id="hf-8da8" id="s11-c1" class="callout">Use your own times</div>
+  </div>
+  <script>
+    // Host starts at frame 3746 (9 frames before the cut at 3755).
+    const O = 3746, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set([".s11-seg"], { scaleX: 0 });
+    gsap.set([".s11-lbl", ".s11-icon", "#s11-title", "#s11-phone"], { y: 16 });
+    gsap.set("#s11-c1", { y: 24 });
+
+    // Camera pull: floor plan view, the timeline's first dot (handed over by the breath circle)
+    tl.fromTo("#s11-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.to("#s11-dot1", { opacity: 1, duration: F(12) }, 0);
+
+    // f3793 "fill the gap": the gap between two ticks glows
+    tl.to("#s11-gap", { opacity: 1, duration: F(20), ease: BREATH, yoyo: true, repeat: 3 }, T(3793));
+
+    // f3893 "Dhuhr"
+    tl.to("#s11-title", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(3893));
+
+    // f3937 HERO "Five minutes before": the line grows, the phone goes into the bag
+    tl.to("#s11-seg1", { scaleX: 1, duration: F(40), ease: GLIDE }, T(3937));
+    tl.to(["#s11-l1", "#s11-i1"], { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(3937));
+    tl.to("#s11-phone", { opacity: 1, y: 0, duration: F(8), ease: SETTLE }, T(3945));
+    tl.to("#s11-phone", { y: 90, duration: F(14), ease: EXIT }, T(3960));
+    tl.to("#s11-phone", { opacity: 0, duration: F(4) }, T(3972));
+
+    // f4035 "At the adhan": minaret and the focus toggle flips on
+    tl.to("#s11-dot2", { opacity: 1, scale: 1, duration: F(10), ease: SNAP }, T(4035));
+    tl.to("#s11-seg2", { scaleX: 1, duration: F(40), ease: GLIDE }, T(4035));
+    tl.to(["#s11-l2", "#s11-i2", "#s11-tg"], { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(4035));
+    tl.to("#s11-tgk", { attr: { cx: 98 }, duration: F(10), ease: SNAP }, T(4060));
+    tl.to("#s11-tgt", { attr: { fill: "#7FC4AE" }, duration: F(10) }, T(4060));
+
+    // f4129 "wudu"
+    tl.to("#s11-dot3", { opacity: 1, duration: F(10), ease: SNAP }, T(4129));
+    tl.to("#s11-seg3", { scaleX: 1, duration: F(40), ease: GLIDE }, T(4129));
+    tl.to(["#s11-l3", "#s11-i3"], { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(4129));
+
+    // f4189 "you pray": the line completes
+    tl.to("#s11-dot4", { opacity: 1, duration: F(10), ease: SNAP }, T(4189));
+    tl.to(["#s11-l4", "#s11-i4"], { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(4189));
+
+    // f4232 "Use your own times"
+    tl.to("#s11-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(4232));
+    tl.to("#s11-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(4232 + 12 + 60));
+
+    window.__timelines["s11-dhuhr"] = tl;
+  </script>
+</template>

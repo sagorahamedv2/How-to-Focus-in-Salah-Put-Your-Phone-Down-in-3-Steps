@@ -1,0 +1,124 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s12-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    #s12-quote { position: absolute; left: 300px; top: 130px; width: 760px; padding: 36px 44px; border-radius: 36px; background: var(--sand-100);
+      font: 400 40px/1.45 "Inter", sans-serif; color: var(--emerald-950); opacity: 0; transform-origin: 50% 100%; }
+    #s12-quote i { position: absolute; left: 90px; bottom: -34px; width: 0; height: 0; border-left: 30px solid transparent; border-right: 30px solid transparent; border-top: 40px solid var(--sand-100); }
+  </style>
+  <div data-hf-id="hf-3rf5" id="root" data-composition-id="s12-objection" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-bvxq" id="s12-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+      <div data-hf-id="hf-0ht8" id="s12-lampglow" class="abs glow" style="left:620px;top:420px;width:760px;height:760px;opacity:0.4;"></div>
+
+      <!-- fridge -->
+      <div data-hf-id="hf-nvuu" class="abs" style="left:1480px;top:130px;width:340px;height:750px;background:var(--sand-300);border-radius:20px 20px 0 0;"></div>
+      <div data-hf-id="hf-2ejq" class="abs" style="left:1480px;top:400px;width:340px;height:8px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-8k23" class="abs" style="left:1500px;top:250px;width:14px;height:110px;border-radius:7px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-q9p1" class="abs" style="left:1500px;top:450px;width:14px;height:200px;border-radius:7px;background:var(--sand-500);"></div>
+
+      <!-- timetable card with a magnet -->
+      <div data-hf-id="hf-gjkw" id="s12-tt" class="abs" style="left:1560px;top:450px;width:200px;height:260px;background:var(--sand-100);border-radius:8px;opacity:0;">
+        <div data-hf-id="hf-amfm" class="abs" style="left:24px;top:56px;width:152px;height:8px;border-radius:4px;background:var(--emerald-950);opacity:0.55;"></div>
+        <div data-hf-id="hf-9imx" class="abs" style="left:24px;top:88px;width:152px;height:8px;border-radius:4px;background:var(--emerald-950);opacity:0.55;"></div>
+        <div data-hf-id="hf-4n8y" class="abs" style="left:24px;top:120px;width:152px;height:8px;border-radius:4px;background:var(--emerald-950);opacity:0.55;"></div>
+        <div data-hf-id="hf-8al7" class="abs" style="left:24px;top:152px;width:152px;height:8px;border-radius:4px;background:var(--emerald-950);opacity:0.55;"></div>
+        <div data-hf-id="hf-y4fw" class="abs" style="left:24px;top:184px;width:152px;height:8px;border-radius:4px;background:var(--emerald-950);opacity:0.55;"></div>
+        <div data-hf-id="hf-7s9c" id="s12-mag" class="abs" style="left:78px;top:-14px;width:44px;height:44px;border-radius:50%;background:var(--emerald-600);border:5px solid var(--emerald-950);"></div>
+      </div>
+
+      <!-- table -->
+      <div data-hf-id="hf-pjv2" class="abs" style="left:280px;top:700px;width:1000px;height:22px;background:var(--sand-500);border-radius:4px;"></div>
+      <div data-hf-id="hf-1cqm" class="abs" style="left:1180px;top:722px;width:16px;height:158px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-wnkh" class="abs" style="left:380px;top:722px;width:16px;height:158px;background:var(--sand-500);opacity:0;"></div>
+
+      <!-- alarm clock -->
+      <svg data-hf-id="hf-vinm" id="s12-clock" class="abs" style="left:760px;top:560px;opacity:0;transform-origin:50% 100%;" width="140" height="140" viewBox="0 0 140 140"><circle data-hf-id="hf-edsy" cx="34" cy="26" r="16" fill="#B99A68"/><circle data-hf-id="hf-01k0" cx="106" cy="26" r="16" fill="#B99A68"/><circle data-hf-id="hf-1r5c" cx="70" cy="76" r="54" fill="#E3CFA6"/><circle data-hf-id="hf-hugo" cx="70" cy="76" r="42" fill="#F4EAD5"/><path data-hf-id="hf-0io8" d="M70 76 V46 M70 76 L90 88" stroke="#06211C" stroke-width="6" stroke-linecap="round"/><path data-hf-id="hf-g6cp" d="M40 132 l-8 8 M100 132 l8 8" stroke="#B99A68" stroke-width="8" stroke-linecap="round"/></svg>
+      <!-- watch -->
+      <svg data-hf-id="hf-g8y1" id="s12-watch" class="abs" style="left:990px;top:590px;opacity:0;" width="110" height="110" viewBox="0 0 110 110"><rect data-hf-id="hf-nlr8" x="34" y="0" width="42" height="110" rx="10" fill="#14705C"/><rect data-hf-id="hf-ouqe" x="18" y="26" width="74" height="58" rx="16" fill="#E3CFA6"/><rect data-hf-id="hf-je38" x="26" y="34" width="58" height="42" rx="10" fill="#F4EAD5"/><path data-hf-id="hf-4rez" d="M55 55 V42 M55 55 L66 60" stroke="#06211C" stroke-width="4" stroke-linecap="round"/></svg>
+
+      <!-- the phone on the table -->
+      <svg data-hf-id="hf-2h5h" id="s12-phone" class="abs" style="left:340px;top:260px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/></svg>
+
+      <!-- the phone's alarm icon -->
+      <svg data-hf-id="hf-i51a" id="s12-alarm" class="abs" style="left:402px;top:380px;opacity:0;" width="116" height="100" viewBox="0 0 116 100">
+        <path data-hf-id="hf-5hru" id="s12-wl" d="M14 30 q-12 20 0 40 M28 38 q-7 12 0 24" fill="none" stroke="#E26D4F" stroke-width="5" stroke-linecap="round"/>
+        <path data-hf-id="hf-wt7k" id="s12-wr" d="M102 30 q12 20 0 40 M88 38 q7 12 0 24" fill="none" stroke="#E26D4F" stroke-width="5" stroke-linecap="round"/>
+        <circle data-hf-id="hf-874t" cx="58" cy="52" r="30" fill="none" stroke="#E26D4F" stroke-width="7"/><circle data-hf-id="hf-m4yw" cx="36" cy="22" r="10" fill="#E26D4F"/><circle data-hf-id="hf-skej" cx="80" cy="22" r="10" fill="#E26D4F"/>
+        <path data-hf-id="hf-juze" d="M58 52 V34 M58 52 L70 58" stroke="#E26D4F" stroke-width="6" stroke-linecap="round"/>
+        <path data-hf-id="hf-b82s" id="s12-xx" d="M20 88 L98 10" stroke="#F4EAD5" stroke-width="8" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/>
+      </svg>
+    </div>
+
+    <div data-hf-id="hf-yr0l" id="s12-quote">I need my phone for prayer times.<i data-hf-id="hf-wt6k"></i></div>
+  </div>
+  <script>
+    // Host starts at frame 4324 (9 frames before the cut at 4333).
+    const O = 4324, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set("#s12-phone", { scale: 0.45 });
+    gsap.set("#s12-quote", { y: 24 });
+    gsap.set("#s12-clock", { scale: 0.6 });
+
+    // Camera pull, kitchen with a fridge
+    tl.fromTo("#s12-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.to("#s12-lampglow", { opacity: 0.8, duration: F(45), ease: BREATH, repeat: 10, yoyo: true }, 0);
+
+    // f4330 the myth card; f4376 it tilts as the myth flips over
+    tl.to("#s12-quote", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(4330));
+    tl.to("#s12-quote", { rotation: -7, scaleX: 0.92, duration: F(20), ease: GLIDE }, T(4376));
+
+    // f4438 "Fair.": it settles flat, then slides to the left
+    tl.to("#s12-quote", { rotation: 0, scaleX: 1, duration: F(14), ease: SETTLE }, T(4438));
+    tl.to("#s12-quote", { x: -420, opacity: 0, duration: F(24), ease: EXIT }, T(4460));
+
+    // f4489 "move that job somewhere else": the alarm icon pops off the phone and floats right
+    tl.fromTo("#s12-alarm", { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: F(12), ease: SNAP, immediateRender: false }, T(4489));
+    tl.to("#s12-alarm", { x: 400, y: 120, duration: F(40), ease: GLIDE }, T(4500));
+    tl.to("#s12-alarm", { opacity: 0, duration: F(8), ease: EXIT }, T(4532));
+
+    // f4539 HERO "alarm clock": it pops onto the table; f4577 the watch lands
+    tl.to("#s12-clock", { opacity: 1, scale: 1, duration: F(15), ease: SNAP }, T(4539));
+    tl.fromTo("#s12-watch", { opacity: 0, y: -90 }, { opacity: 1, y: 0, duration: F(15), ease: SETTLE, immediateRender: false }, T(4577));
+
+    // f4623 "printed timetable on the fridge": the card sticks with a magnet
+    tl.fromTo("#s12-tt", { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: F(14), ease: SETTLE, immediateRender: false }, T(4623));
+    tl.fromTo("#s12-mag", { scale: 1.5 }, { scale: 1, duration: F(8), ease: SNAP, immediateRender: false }, T(4631));
+
+    // f4671 "if your phone has to be the alarm": the icon is bright on the phone again
+    tl.set("#s12-alarm", { x: 0, y: 0 }, T(4660));
+    tl.fromTo("#s12-alarm", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: F(12), ease: SNAP, immediateRender: false }, T(4671));
+    tl.to(["#s12-wl", "#s12-wr"], { opacity: 0.4, duration: F(10), ease: BREATH, yoyo: true, repeat: 3 }, T(4683));
+
+    // f4738 "silence it": crossed out, the sound waves vanish
+    tl.to("#s12-xx", { strokeDashoffset: 0, duration: F(14), ease: SETTLE }, T(4738));
+    tl.to(["#s12-wl", "#s12-wr"], { opacity: 0, duration: F(10), ease: EXIT }, T(4742));
+
+    // f4773 "walk away": the phone slides off the table, out of frame
+    tl.to(["#s12-phone", "#s12-alarm"], { x: -760, duration: F(30), ease: EXIT }, T(4773));
+
+    window.__timelines["s12-objection"] = tl;
+  </script>
+</template>

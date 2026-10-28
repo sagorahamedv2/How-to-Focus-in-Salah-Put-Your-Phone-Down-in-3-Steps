@@ -1,0 +1,23 @@
+{
+  "note": "Files are synthesized with FFmpeg (no external audio, no licence issues). Raw levels are uneven on purpose: Phase 9 sets each cue's data-volume against the VO. Peak position = seconds into the file where the transient lands, so place_frame = visual_hit_frame + 1 - round(peak_s*30).",
+  "files": {
+    "notification.wav":   {"dur": 0.72, "peak_s": 0.0,  "use": "01 f8"},
+    "pop-a.wav":          {"dur": 0.12, "peak_s": 0.0,  "use": "soft pop; alternate with pop-b so no take repeats back to back"},
+    "pop-b.wav":          {"dur": 0.14, "peak_s": 0.0,  "use": "soft pop, lower pitch"},
+    "tick.wav":           {"dur": 0.04, "peak_s": 0.0,  "use": "clock spin run (01), ring (08), timeline dots (11)"},
+    "tap.wav":            {"dur": 0.08, "peak_s": 0.0,  "use": "09 bubbles x5"},
+    "phone-buzz.wav":     {"dur": 0.90, "peak_s": 0.05, "use": "04 f1398"},
+    "toggle-click.wav":   {"dur": 0.03, "peak_s": 0.0,  "use": "08 f2597"},
+    "magnet-click.wav":   {"dur": 0.05, "peak_s": 0.0,  "use": "12 f4627"},
+    "drawer-close.wav":   {"dur": 0.25, "peak_s": 0.0,  "use": "07 f2330"},
+    "locker-door.wav":    {"dur": 0.30, "peak_s": 0.0,  "use": "07 f2370"},
+    "door-slide.wav":     {"dur": 0.90, "peak_s": 0.4,  "use": "06 f1855"},
+    "water-drip.wav":     {"dur": 0.15, "peak_s": 0.0,  "use": "10 f3412, 3426, 3441"},
+    "anchor-thud.wav":    {"dur": 0.50, "peak_s": 0.0,  "use": "13 f5177"},
+    "whoosh-a.wav":       {"dur": 0.70, "peak_s": 0.28, "use": "rotation A, then B, then C"},
+    "whoosh-b.wav":       {"dur": 0.70, "peak_s": 0.28, "use": "rotation B"},
+    "whoosh-c.wav":       {"dur": 0.70, "peak_s": 0.28, "use": "rotation C"},
+    "riser-impact.wav":   {"dur": 2.10, "peak_s": 1.2,  "use": "05 only; impact at 1.2 s, so start at f1737+1-36 = f1702"}
+  },
+  "not_included": "Room-tone air bed (optional, Phase 9). No music per SPEC."
+}

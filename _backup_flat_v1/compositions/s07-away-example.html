@@ -1,0 +1,145 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s07-A, #s07-B { position: absolute; inset: 0; transform-origin: 50% 50%; }
+    #s07-B { background: var(--emerald-800); opacity: 0; }
+    .s07-tile { position: absolute; width: 240px; height: 240px; border: 2px solid var(--emerald-600); opacity: 0.35; }
+    .s07-top { position: absolute; width: 108px; height: 198px; border-radius: 20px; background: var(--emerald-950); }
+    .s07-top i { position: absolute; left: 8px; top: 12px; width: 92px; height: 174px; border-radius: 13px; background: var(--emerald-800); }
+  </style>
+  <div data-hf-id="hf-z0h5" id="root" data-composition-id="s07-away-example" data-width="1920" data-height="1080">
+    <!-- A: home entry -->
+    <div data-hf-id="hf-d3ed" id="s07-A">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+      <div data-hf-id="hf-u76s" id="s07-glowA" class="abs glow" style="left:560px;top:380px;width:760px;height:760px;opacity:0.45;"></div>
+
+      <!-- hook and bag -->
+      <div data-hf-id="hf-3hpg" class="abs" style="left:1500px;top:170px;width:40px;height:14px;background:var(--sand-500);border-radius:7px;"></div>
+      <svg data-hf-id="hf-u35e" id="s07-bagback" class="abs" style="left:1400px;top:150px;" width="240" height="500" viewBox="0 0 240 500"><path data-hf-id="hf-vylw" d="M80 50 q0 -40 40 -40 q40 0 40 40" fill="none" stroke="#B99A68" stroke-width="12" stroke-linecap="round"/></svg>
+      <svg data-hf-id="hf-oufe" id="s07-phone" class="abs" style="left:820px;top:200px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/></svg>
+      <svg data-hf-id="hf-kue1" id="s07-bag" class="abs" style="left:1400px;top:150px;" width="240" height="500" viewBox="0 0 240 500"><path data-hf-id="hf-lghi" d="M24 300 h192 l-14 190 h-164z" fill="#B99A68"/><path data-hf-id="hf-wqhh" d="M24 300 h192 l-6 36 h-180z" fill="#E3CFA6"/></svg>
+
+      <!-- cabinet with a drawer -->
+      <div data-hf-id="hf-boo2" class="abs" style="left:680px;top:640px;width:520px;height:16px;background:var(--sand-300);border-radius:4px;"></div>
+      <div data-hf-id="hf-q5m8" class="abs" style="left:700px;top:656px;width:480px;height:224px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-byry" id="s07-drawerA" class="abs" style="left:724px;top:680px;width:432px;height:90px;background:var(--sand-300);border-radius:6px;">
+        <div data-hf-id="hf-8aks" class="abs" style="left:176px;top:36px;width:80px;height:12px;border-radius:6px;background:var(--sand-500);"></div>
+      </div>
+      <div data-hf-id="hf-7hyl" class="abs" style="left:724px;top:790px;width:432px;height:70px;background:var(--sand-300);border-radius:6px;">
+        <div data-hf-id="hf-04or" class="abs" style="left:176px;top:28px;width:80px;height:12px;border-radius:6px;background:var(--sand-500);"></div>
+      </div>
+    </div>
+
+    <!-- B: top view of an office desk -->
+    <div data-hf-id="hf-h1ie" id="s07-B">
+      <div data-hf-id="hf-c2uz" class="s07-tile" style="left:0;top:0;"></div><div data-hf-id="hf-h23l" class="s07-tile" style="left:240px;top:0;"></div><div data-hf-id="hf-9sz3" class="s07-tile" style="left:480px;top:0;"></div><div data-hf-id="hf-1qtc" class="s07-tile" style="left:720px;top:0;"></div><div data-hf-id="hf-thtm" class="s07-tile" style="left:960px;top:0;"></div><div data-hf-id="hf-8vzg" class="s07-tile" style="left:1200px;top:0;"></div><div data-hf-id="hf-6jfi" class="s07-tile" style="left:1440px;top:0;"></div><div data-hf-id="hf-vapk" class="s07-tile" style="left:1680px;top:0;"></div>
+      <div data-hf-id="hf-kjzt" class="s07-tile" style="left:0;top:240px;"></div><div data-hf-id="hf-4k3v" class="s07-tile" style="left:240px;top:240px;"></div><div data-hf-id="hf-7sad" class="s07-tile" style="left:480px;top:240px;"></div><div data-hf-id="hf-5plq" class="s07-tile" style="left:720px;top:240px;"></div><div data-hf-id="hf-9bes" class="s07-tile" style="left:960px;top:240px;"></div><div data-hf-id="hf-47he" class="s07-tile" style="left:1200px;top:240px;"></div><div data-hf-id="hf-s2c0" class="s07-tile" style="left:1440px;top:240px;"></div><div data-hf-id="hf-v0ue" class="s07-tile" style="left:1680px;top:240px;"></div>
+      <div data-hf-id="hf-fabr" class="s07-tile" style="left:0;top:480px;"></div><div data-hf-id="hf-ibfp" class="s07-tile" style="left:240px;top:480px;"></div><div data-hf-id="hf-domr" class="s07-tile" style="left:480px;top:480px;"></div><div data-hf-id="hf-cc1o" class="s07-tile" style="left:720px;top:480px;"></div><div data-hf-id="hf-tt5y" class="s07-tile" style="left:960px;top:480px;"></div><div data-hf-id="hf-pr7k" class="s07-tile" style="left:1200px;top:480px;"></div><div data-hf-id="hf-slvm" class="s07-tile" style="left:1440px;top:480px;"></div><div data-hf-id="hf-gas4" class="s07-tile" style="left:1680px;top:480px;"></div>
+      <div data-hf-id="hf-idz0" class="s07-tile" style="left:0;top:720px;"></div><div data-hf-id="hf-n9j6" class="s07-tile" style="left:240px;top:720px;"></div><div data-hf-id="hf-02o8" class="s07-tile" style="left:480px;top:720px;"></div><div data-hf-id="hf-lx97" class="s07-tile" style="left:720px;top:720px;"></div><div data-hf-id="hf-4f3p" class="s07-tile" style="left:960px;top:720px;"></div><div data-hf-id="hf-g767" class="s07-tile" style="left:1200px;top:720px;"></div><div data-hf-id="hf-xe01" class="s07-tile" style="left:1440px;top:720px;"></div><div data-hf-id="hf-by9v" class="s07-tile" style="left:1680px;top:720px;"></div>
+
+      <!-- drawer box sits under the desk and slides out below its edge -->
+      <div data-hf-id="hf-b1n1" id="s07-drawerB" class="abs" style="left:560px;top:510px;width:400px;height:190px;background:var(--sand-500);border-radius:10px;z-index:1;">
+        <div data-hf-id="hf-zmzh" class="abs" style="left:20px;top:20px;width:360px;height:150px;border-radius:6px;background:var(--emerald-950);opacity:0.45;"></div>
+      </div>
+      <!-- desk -->
+      <div data-hf-id="hf-w4if" class="abs" style="left:360px;top:160px;width:1200px;height:540px;background:var(--sand-300);border-radius:14px;z-index:2;"></div>
+      <div data-hf-id="hf-bni6" id="s07-mat" class="abs" style="left:400px;top:196px;width:150px;height:96px;z-index:3;opacity:0;">
+        <svg data-hf-id="hf-pe4l" width="150" height="96" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-f80c" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="10"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/></svg>
+      </div>
+      <div data-hf-id="hf-yyl5" class="abs glow" style="left:1060px;top:190px;width:300px;height:300px;z-index:3;opacity:0.5;"></div>
+
+      <!-- locker (right) -->
+      <div data-hf-id="hf-basw" class="abs" style="left:1640px;top:200px;width:200px;height:440px;background:var(--emerald-950);border-radius:10px;z-index:3;"></div>
+      <div data-hf-id="hf-9ktg" class="abs" style="left:1652px;top:212px;width:176px;height:416px;background:var(--emerald-800);border-radius:6px;z-index:3;"></div>
+      <div data-hf-id="hf-muak" id="s07-lockerdoor" class="abs" style="left:1652px;top:212px;width:176px;height:416px;background:var(--sand-500);border-radius:6px;transform-origin:0% 50%;z-index:6;">
+        <div data-hf-id="hf-ju0q" class="abs" style="left:130px;top:190px;width:14px;height:44px;border-radius:7px;background:var(--sand-300);"></div>
+        <div data-hf-id="hf-bmp3" class="abs" style="left:24px;top:36px;width:128px;height:10px;border-radius:5px;background:var(--sand-300);opacity:0.7;"></div>
+        <div data-hf-id="hf-rar6" class="abs" style="left:24px;top:60px;width:128px;height:10px;border-radius:5px;background:var(--sand-300);opacity:0.7;"></div>
+      </div>
+
+      <!-- chair -->
+      <div data-hf-id="hf-9p7z" id="s07-chair" class="abs" style="left:1060px;top:700px;width:280px;height:200px;z-index:4;">
+        <div data-hf-id="hf-999a" class="abs" style="left:0;top:60px;width:280px;height:140px;border-radius:28px;background:var(--emerald-600);"></div>
+        <div data-hf-id="hf-938h" class="abs" style="left:20px;top:0;width:240px;height:60px;border-radius:20px;background:var(--emerald-950);"></div>
+      </div>
+
+      <!-- phones from above -->
+      <div data-hf-id="hf-93yl" id="s07-t1" class="s07-top" style="left:820px;top:260px;z-index:5;"><i data-hf-id="hf-wt6k"></i></div>
+      <div data-hf-id="hf-ryof" id="s07-t2" class="s07-top" style="left:1250px;top:300px;z-index:5;opacity:0;"><i data-hf-id="hf-zeb8"></i></div>
+    </div>
+
+    <div data-hf-id="hf-l89c" id="s07-c1" class="callout">Stand up to get it</div>
+  </div>
+  <script>
+    // Host starts at frame 2099 (9 frames before the cut at 2108).
+    const O = 2099, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set("#s07-phone", { scale: 0.45 });
+    gsap.set("#s07-c1", { y: 24 });
+    gsap.set("#s07-lockerdoor", { scaleX: 1 });
+
+    // Match cut: the phone stays where scene 06 left it while the room becomes a home entry
+    tl.fromTo("#s07-A", { opacity: 0 }, { opacity: 1, duration: F(18), ease: "power2.out" }, 0);
+    tl.to("#s07-glowA", { opacity: 0.8, duration: F(45), ease: BREATH, repeat: 6, yoyo: true }, 0);
+
+    // f2189 "bag or a drawer": the phone drops into the bag, then the drawer slides closed beside it
+    tl.to("#s07-phone", { x: 580, y: -330, duration: F(22), ease: GLIDE }, T(2189));
+    tl.to("#s07-phone", { y: -90, scale: 0.4, duration: F(14), ease: EXIT }, T(2189 + 22));
+    tl.to("#s07-phone", { opacity: 0, duration: F(4) }, T(2189 + 34));
+    tl.to("#s07-bag", { y: 10, duration: F(6), ease: SETTLE, yoyo: true, repeat: 1 }, T(2189 + 34));
+    tl.to("#s07-drawerA", { x: 56, duration: F(10), ease: SETTLE }, T(2192 + 18));
+    tl.to("#s07-drawerA", { x: 0, duration: F(12), ease: GLIDE }, T(2192 + 40));
+
+    // f2254 "Picture someone at work": the camera lifts to a top view of an office desk
+    tl.to("#s07-A", { scale: 0.9, opacity: 0, duration: F(18), ease: GLIDE }, T(2254));
+    tl.fromTo("#s07-B", { scale: 1.12, opacity: 0 }, { scale: 1, opacity: 1, duration: F(24), ease: GLIDE, immediateRender: false }, T(2254));
+
+    // f2324 HERO "desk drawer": the phone goes into the desk drawer, the drawer closes
+    tl.to("#s07-drawerB", { y: 190, duration: F(14), ease: SETTLE }, T(2310));
+    tl.to("#s07-t1", { x: -60, y: 460, duration: F(18), ease: GLIDE }, T(2324));
+    tl.set("#s07-t1", { zIndex: 0 }, T(2324 + 19));
+    tl.to("#s07-drawerB", { y: 0, duration: F(14), ease: "power2.inOut" }, T(2324 + 22));
+    tl.to("#s07-t1", { y: 270, duration: F(14), ease: "power2.inOut" }, T(2324 + 22));
+    tl.to("#s07-t1", { opacity: 0, duration: F(6) }, T(2324 + 30));
+
+    // f2364 "locker": the locker door opens, the phone is placed, the door shuts
+    tl.fromTo("#s07-t2", { opacity: 0 }, { opacity: 1, duration: F(8), ease: SETTLE, immediateRender: false }, T(2358));
+    tl.to("#s07-lockerdoor", { scaleX: 0.12, duration: F(14), ease: SETTLE }, T(2364));
+    tl.to("#s07-t2", { x: 410, y: 40, duration: F(22), ease: GLIDE }, T(2368));
+    tl.to("#s07-lockerdoor", { scaleX: 1, duration: F(14), ease: GLIDE }, T(2368 + 26));
+
+    // f2410 "before they walk to pray": prayer mat icon at the desk corner
+    tl.to("#s07-mat", { opacity: 1, duration: F(12), ease: SETTLE }, T(2410));
+
+    // f2429 "If you have to stand up": the chair pushes back and stays pulled back; callout
+    tl.to("#s07-chair", { y: 90, duration: F(18), ease: SETTLE }, T(2429));
+    tl.to("#s07-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(2429));
+    tl.to("#s07-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(2429 + 12 + 60));
+
+    window.__timelines["s07-away-example"] = tl;
+  </script>
+</template>

@@ -1,0 +1,59 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; direction: rtl; letter-spacing: 0; line-height: 1.9; white-space: nowrap; }
+      .ar span { display: inline-block; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s15-stage { position: absolute; inset: 0; background: var(--emerald-950); transform-origin: 50% 50%; }
+    #s15-salam { position: absolute; left: 0; top: 345px; width: 1920px; text-align: center; font-size: 140px; color: var(--sand-100); }
+  </style>
+  <div data-hf-id="hf-qaud" id="root" data-composition-id="s15-salam" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-gzkr" id="s15-stage">
+      <!-- the dark house, one lit window -->
+      <div data-hf-id="hf-au94" class="abs" style="left:0;top:0;width:1920px;height:880px;background:var(--emerald-800);opacity:0.25;"></div>
+      <div data-hf-id="hf-81y6" id="s15-glow" class="abs glow" style="left:260px;top:20px;width:1400px;height:1000px;opacity:0.5;"></div>
+      <div data-hf-id="hf-ryul" class="abs" style="left:340px;top:150px;width:1240px;height:720px;background:var(--sand-300);border-radius:420px 420px 10px 10px;"></div>
+      <div data-hf-id="hf-knmb" class="abs" style="left:364px;top:174px;width:1192px;height:672px;background:var(--emerald-950);border-radius:396px 396px 6px 6px;overflow:hidden;">
+        <div data-hf-id="hf-z0zq" class="abs" style="left:0;top:0;width:1192px;height:672px;background:var(--lamp);opacity:0.2;"></div>
+        <svg data-hf-id="hf-k7ic" class="abs" style="left:1060px;top:430px;opacity:0.6;" width="62" height="220" viewBox="0 0 120 420"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/></svg>
+      </div>
+
+      <div data-hf-id="hf-elh3" id="s15-salam" class="ar" dir="rtl" lang="ar"><span data-hf-id="hf-zuv8" id="s15-w1">السَّلَامُ</span> <span data-hf-id="hf-bgib" id="s15-w2">عَلَيْكُمْ</span> <span data-hf-id="hf-oxun" id="s15-w3">وَرَحْمَةُ</span> <span data-hf-id="hf-8jho" id="s15-w4">اللَّهِ</span></div>
+    </div>
+  </div>
+  <script>
+    // Host starts at frame 5795 (9 frames before the cut at 5804) and runs to the end of the film (5868).
+    const O = 5795, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", BREATH = "sine.inOut";
+    const words = ["#s15-w1", "#s15-w2", "#s15-w3", "#s15-w4"];
+
+    gsap.set(words, { opacity: 0, y: 24 });
+
+    // Poster dissolve in from the dimmed du'a poster
+    tl.fromTo("#s15-stage", { opacity: 0 }, { opacity: 1, duration: F(18), ease: "power2.out" }, 0);
+    tl.fromTo("#s15-stage", { scale: 1 }, { scale: 1.01, duration: T(5868), ease: "none", immediateRender: false }, 0);
+    tl.to("#s15-glow", { opacity: 0.8, duration: F(36), ease: BREATH, yoyo: true, repeat: 1 }, 0);
+
+    // f5801 HERO: the salam calligraphy settles over the lit window, word by word, then holds
+    words.forEach((w, i) => {
+      tl.to(w, { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(5801 + i * 6));
+    });
+
+    window.__timelines["s15-salam"] = tl;
+  </script>
+</template>

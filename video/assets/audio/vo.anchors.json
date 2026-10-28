@@ -1,0 +1,20 @@
+{
+  "note": "Seconds on the VO timeline (film time, VO starts at 0). Times from vo.transcript.json (Parakeet). Arabic is transcribed phonetically; the ayah recitation at 25.6-30.88 has no words in the transcript.",
+  "scenes": [
+    {"scene": "01-hook",        "start": 0.00,   "anchors": {"adhan": 0.24, "one minute": 1.44, "phone": 4.0, "twenty minutes later": 5.76}},
+    {"scene": "02-salam",       "start": 10.56,  "anchors": {"salam": 10.56, "three small steps": 14.0, "Allahu Akbar": 19.52, "no guilt": 20.72}},
+    {"scene": "03-ayah",        "start": 22.24,  "anchors": {"Allah describes success": 23.44, "ayah recitation": 25.60, "ayah end / translation": 30.88, "Quran 23:1-2": 35.28}},
+    {"scene": "04-khushu",      "start": 38.96,  "anchors": {"khushu": 38.96, "phone buzzing": 46.0, "focus decided before": 49.12, "remove the fight": 54.00}},
+    {"scene": "05-three-words", "start": 55.39,  "anchors": {"Away": 57.87, "Silent": 58.83, "Replace": 59.79}},
+    {"scene": "06-away",        "start": 61.79,  "anchors": {"adhan": 62.19, "hayya 'ala as-salah": 63.07, "another room": 67.31}},
+    {"scene": "07-away-example","start": 70.27,  "anchors": {"bag or drawer": 70.27, "work / locker": 75.23, "stand up to get it": 81.07}},
+    {"scene": "08-silent",      "start": 84.35,  "anchors": {"Silent": 84.35, "focus mode": 85.39, "fifteen minutes": 90.0, "family / emergencies": 92.43, "phone decides": 95.95}},
+    {"scene": "09-silent-ex",   "start": 99.15,  "anchors": {"student in library": 99.15, "it will still be there": 103.15}},
+    {"scene": "10-replace",     "start": 104.75, "anchors": {"Replace": 104.75, "urge": 106.27, "wudu": 113.71, "sit, breathe": 115.15, "ask a scholar": 119.80}},
+    {"scene": "11-dhuhr",       "start": 125.16, "anchors": {"goal is simple": 125.16, "Dhuhr": 129.88, "5 min before": 131.32, "adhan": 134.60, "wudu": 137.72, "pray": 139.72, "your own times": 141.16}},
+    {"scene": "12-objection",   "start": 144.44, "anchors": {"most common excuse": 144.44, "need my phone for times": 145.96, "alarm clock/watch/timetable": 150.60, "silence it": 155.80}},
+    {"scene": "13-start-small", "start": 161.48, "anchors": {"don't need all three": 161.48, "pick one prayer": 163.40, "Away": 168.20, "anchor": 172.52, "clearing the path": 174.28}},
+    {"scene": "14-cta-dua",     "start": 176.25, "anchors": {"checklist": 179.29, "du'a of Ibrahim": 180.89, "Rabbi ij'alni": 183.0, "translation": 188.65}},
+    {"scene": "15-salam",       "start": 193.45, "anchors": {"wa rahmatullah": 193.45, "VO ends": 195.53}}
+  ]
+}

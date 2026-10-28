@@ -1,0 +1,3 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 440" width="240" height="440" role="img"><title>Smartphone, front. #glow and #dot start hidden</title>
+<rect id="body" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect id="screen" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect id="glow" x="24" y="30" width="192" height="380" rx="24" fill="#FFD98A" opacity="0"/><rect x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/><circle id="dot" cx="196" cy="62" r="14" fill="#E26D4F" opacity="0"/>
+</svg>

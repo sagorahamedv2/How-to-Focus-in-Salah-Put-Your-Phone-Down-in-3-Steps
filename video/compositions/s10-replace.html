@@ -1,0 +1,73 @@
+<template>
+  <style>
+    @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; pointer-events: none; color: #F4EAD5; font-family: "Inter", sans-serif;
+      --sand: #F4EAD5; --sand-300: #E3CFA6; --mint: #7FC4AE; --gold: #D9A441; --deep: #03130F; }
+    #root .scrim { position: absolute; left: -260px; top: 520px; width: 1700px; height: 820px; opacity: 0;
+      background: radial-gradient(closest-side, rgba(3,19,15,0.72), rgba(3,19,15,0.35) 55%, rgba(3,19,15,0)); }
+    #root .scrim.top { left: 160px; top: -260px; width: 1600px; height: 760px; }
+    #root .co { position: absolute; left: 192px; top: 812px; display: flex; align-items: center; white-space: nowrap; opacity: 0;
+      font: 600 84px/1.12 "Fraunces", serif; color: var(--sand); text-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+    #root .co .bar { display: block; width: 8px; height: 92px; margin-right: 30px; border-radius: 4px; background: var(--mint); transform-origin: 50% 100%; }
+    #root .co .w { display: inline-block; overflow: hidden; padding: 0 0.04em 0.1em 0; margin: 0 0.22em -0.1em 0; }
+    #root .co .w:last-child { margin-right: 0; }
+    #root .co .w b { display: inline-block; font-weight: 600; }
+    #root .ar { position: absolute; left: 0; width: 1920px; text-align: center; white-space: nowrap; direction: rtl; letter-spacing: 0; line-height: 1.9;
+      font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; text-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+    #root .ar span { display: inline-block; }
+    #root .gold { color: var(--gold); }
+    #root .tr { position: absolute; left: 360px; width: 1200px; text-align: center; font: 400 40px/1.45 "Inter", sans-serif; color: var(--sand); opacity: 0; text-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+    #root .ref { position: absolute; left: 0; width: 1920px; text-align: center; font: 600 32px/1 "Inter", sans-serif; letter-spacing: 4px; text-transform: uppercase; color: var(--sand-300); opacity: 0; }
+    #root .chip { position: absolute; left: 132px; top: 92px; display: flex; align-items: baseline; gap: 18px; opacity: 0; white-space: nowrap; }
+    #root .chip .n { font: 600 34px/1 "Inter", sans-serif; color: var(--deep); background: var(--gold); width: 52px; height: 52px; border-radius: 26px; display: flex; align-items: center; justify-content: center; align-self: center; }
+    #root .chip .t { font: 700 56px/1 "Fraunces", serif; color: var(--gold); letter-spacing: -1px; text-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+    #root .step { position: absolute; top: 118px; font: 700 150px/1 "Fraunces", serif; letter-spacing: -2px; color: var(--gold); white-space: nowrap; text-shadow: 0 2px 12px rgba(0,0,0,0.25); }
+    #root .step span { display: inline-block; }
+  </style>
+  <div id="root" data-composition-id="s10-replace" data-width="1920" data-height="1080">
+    <div id="s10-chip" class="chip"><span class="n">3</span><span class="t">Replace.</span></div>
+    <div id="s10-sc" class="scrim"></div>
+    <div id="s10-c0" class="co"><i class="bar"></i><span class="w"><b>Sit.</b></span> <span class="w"><b>Breathe.</b></span></div>
+    <div id="s10-c1" class="co"><i class="bar"></i><span class="w"><b>Ask</b></span> <span class="w"><b>a</b></span> <span class="w"><b>qualified</b></span> <span class="w"><b>scholar</b></span></div>
+  </div>
+  <script>
+    // Text layer over the 3D world. Times are film seconds; this host starts at 104.4667 s.
+    const T = (s) => Math.max(0, s - 104.4667);
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", SNAP = "back.out(1.4)";
+    // a key-word callout: accent bar grows, words rise out of a mask, then the card leaves
+    function callout(id, at, hold, scrim) {
+      const el = "#" + id;
+      tl.fromTo(el, { opacity: 0, y: 0 }, { opacity: 1, duration: 0.12 }, T(at) - 0.12);
+      tl.fromTo(el + " .bar", { scaleY: 0 }, { scaleY: 1, duration: 0.3, ease: SETTLE }, T(at) - 0.12);
+      tl.fromTo(el + " .w b", { yPercent: 115 }, { yPercent: 0, duration: 0.45, ease: SETTLE, stagger: 0.06 }, T(at) - 0.1);
+      tl.to(el, { opacity: 0, y: -14, duration: 0.3, ease: EXIT }, T(at) + hold);
+      if (scrim) {
+        tl.fromTo("#" + scrim, { opacity: 0 }, { opacity: 1, duration: 0.3 }, T(at) - 0.2);
+        tl.to("#" + scrim, { opacity: 0, duration: 0.4 }, T(at) + hold + 0.05);
+      }
+    }
+    // word-by-word reveal; each word lands at its time
+    function words(sel, times, d = 0.2) {
+      times.forEach((at, i) => tl.fromTo(sel[i], { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: d, ease: SETTLE }, T(at) - 0.1));
+    }
+    function fadeIn(sel, at, d = 0.4) { tl.fromTo(sel, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: d, ease: SETTLE }, T(at) - 0.1); }
+    function fadeOut(sel, at, d = 0.3) { tl.to(sel, { opacity: 0, duration: d, ease: EXIT }, T(at)); }
+    function chip(id, at, out) {
+      tl.fromTo("#" + id, { opacity: 0, x: -24 }, { opacity: 1, x: 0, duration: 0.45, ease: SETTLE }, T(at));
+      if (out) fadeOut("#" + id, out);
+    }
+
+    chip("s10-chip", 104.9);
+    callout("s10-c0", 115.15, 2.4, "s10-sc");
+    callout("s10-c1", 119.8, 2.6, "s10-sc");
+    fadeOut("#s10-chip", 124.9);
+    tl.set({}, {}, 21);
+    window.__timelines["s10-replace"] = tl;
+  </script>
+</template>

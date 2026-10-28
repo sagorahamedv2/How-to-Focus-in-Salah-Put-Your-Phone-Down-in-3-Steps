@@ -1,0 +1,112 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; direction: rtl; letter-spacing: 0; line-height: 1.9; white-space: nowrap; }
+      .ar span { display: inline-block; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s14-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    #s14-card { position: absolute; left: 1040px; top: 190px; width: 620px; height: 640px; border-radius: 28px; background: var(--sand-100); }
+    .s14-row { position: absolute; left: 48px; width: 524px; height: 120px; }
+    .s14-row b { position: absolute; left: 0; top: 24px; width: 72px; height: 72px; border: 6px solid var(--emerald-950); border-radius: 16px; }
+    .s14-row svg { position: absolute; left: 6px; top: 20px; }
+    .s14-row span { position: absolute; left: 104px; top: 30px; font: 600 48px/1.2 "Inter", sans-serif; color: var(--emerald-950); }
+    .s14-row u { position: absolute; left: 104px; bottom: 0; width: 420px; height: 3px; background: var(--emerald-950); opacity: 0.2; }
+    #s14-poster { position: absolute; inset: 0; background: var(--emerald-950); opacity: 0; transform-origin: 50% 50%; }
+    #s14-frame { position: absolute; left: 72px; top: 54px; width: 1776px; height: 972px; border: 4px solid var(--sand-300); border-radius: 28px; opacity: 0.5; }
+    #s14-frame2 { position: absolute; left: 96px; top: 78px; width: 1728px; height: 924px; border: 2px solid var(--sand-300); border-radius: 18px; opacity: 0.3; }
+    #s14-dua { position: absolute; left: 0; top: 280px; width: 1920px; text-align: center; font-size: 104px; color: var(--gold); }
+    #s14-tr { position: absolute; left: 360px; top: 660px; width: 1200px; text-wrap: balance; text-align: center; font: 400 40px/1.45 "Inter", sans-serif; color: var(--sand-100); opacity: 0; }
+  </style>
+  <div data-hf-id="hf-y8rl" id="root" data-composition-id="s14-cta-dua" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-d79s" id="s14-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+
+      <!-- the lit window -->
+      <div data-hf-id="hf-hobm" id="s14-winglow" class="abs glow" style="left:-60px;top:60px;width:1000px;height:1000px;opacity:0.45;"></div>
+      <div data-hf-id="hf-op5a" class="abs" style="left:240px;top:130px;width:460px;height:640px;background:var(--sand-300);border-radius:230px 230px 8px 8px;"></div>
+      <div data-hf-id="hf-j73y" class="abs" style="left:260px;top:150px;width:420px;height:600px;background:var(--emerald-950);border-radius:210px 210px 4px 4px;overflow:hidden;">
+        <div data-hf-id="hf-a40u" id="s14-winlit" class="abs" style="left:0;top:0;width:420px;height:600px;background:var(--lamp);opacity:0.28;"></div>
+        <svg data-hf-id="hf-qd53" class="abs" style="left:138px;top:130px;" width="140" height="460" viewBox="0 0 120 420"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/></svg>
+      </div>
+
+      <!-- checklist card -->
+      <div data-hf-id="hf-xjjy" id="s14-card">
+        <div data-hf-id="hf-etls" class="s14-row" style="top:70px;"><b data-hf-id="hf-xujp"></b><svg data-hf-id="hf-kwun" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#14705C" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path data-hf-id="hf-v5rw" id="s14-k1" d="M10 32 L25 46 L52 12" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/></svg><span data-hf-id="hf-7gpr">Away</span><u data-hf-id="hf-w5wo"></u></div>
+        <div data-hf-id="hf-l8n3" class="s14-row" style="top:260px;"><b data-hf-id="hf-ey49"></b><svg data-hf-id="hf-05f3" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#14705C" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path data-hf-id="hf-gbid" id="s14-k2" d="M10 32 L25 46 L52 12" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/></svg><span data-hf-id="hf-g25s">Silent</span><u data-hf-id="hf-0jxc"></u></div>
+        <div data-hf-id="hf-6qg6" class="s14-row" style="top:450px;"><b data-hf-id="hf-g51c"></b><svg data-hf-id="hf-zr42" width="60" height="60" viewBox="0 0 60 60" fill="none" stroke="#14705C" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path data-hf-id="hf-gb6i" id="s14-k3" d="M10 32 L25 46 L52 12" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/></svg><span data-hf-id="hf-4vgf">Replace</span><u data-hf-id="hf-zd09"></u></div>
+      </div>
+    </div>
+
+    <!-- du'a poster -->
+    <div data-hf-id="hf-czyz" id="s14-poster">
+      <div data-hf-id="hf-8hkr" id="s14-frame"></div>
+      <div data-hf-id="hf-9buz" id="s14-frame2"></div>
+      <div data-hf-id="hf-3utu" id="s14-dua" class="ar" dir="rtl" lang="ar"><span data-hf-id="hf-j3n7" id="s14-w1">رَبِّ</span> <span data-hf-id="hf-yraa" id="s14-w2">اجْعَلْنِي</span> <span data-hf-id="hf-jld8" id="s14-w3">مُقِيمَ</span> <span data-hf-id="hf-qea5" id="s14-w4">الصَّلَاةِ</span> <span data-hf-id="hf-77vy" id="s14-w5">وَمِن</span> <span data-hf-id="hf-rfr2" id="s14-w6">ذُرِّيَّتِي</span></div>
+      <div data-hf-id="hf-1vju" id="s14-tr">My Lord, make me one who establishes prayer, and from my descendants.</div>
+    </div>
+  </div>
+  <script>
+    // Host starts at frame 5279 (9 frames before the cut at 5288).
+    const O = 5279, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+    const words = ["#s14-w1", "#s14-w2", "#s14-w3", "#s14-w4", "#s14-w5", "#s14-w6"];
+    // Word k lands at 5487 + 29*k; the recitation window runs 5490-5660 (interpolated, see STORYBOARD open point 7)
+    const landAt = [5487, 5516, 5545, 5574, 5603, 5632];
+
+    gsap.set("#s14-card", { x: 900, opacity: 0 });
+    gsap.set(words, { opacity: 0, y: 24 });
+    gsap.set("#s14-tr", { y: 24 });
+
+    // Camera pull to the lit window (1.06 -> 1) with a crossfade
+    tl.fromTo("#s14-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.to("#s14-winglow", { opacity: 0.85, duration: F(45), ease: BREATH, repeat: 5, yoyo: true }, 0);
+
+    // f5285 the checklist card slides in from the right
+    tl.to("#s14-card", { x: 0, opacity: 1, duration: F(20), ease: SETTLE }, T(5285));
+
+    // f5376 HERO "checklist": ticks draw on, one per beat
+    ["#s14-k1", "#s14-k2", "#s14-k3"].forEach((k, i) => {
+      tl.to(k, { strokeDashoffset: 0, duration: F(12), ease: SETTLE }, T(5376 + i * 18));
+    });
+
+    // f5424 "du'a of Ibrahim": the card leaves, poster dissolve to emerald-950 (18 frames)
+    tl.to("#s14-card", { x: 900, opacity: 0, duration: F(14), ease: EXIT }, T(5420));
+    tl.to("#s14-poster", { opacity: 1, duration: F(18), ease: "power2.out" }, T(5427));
+    tl.to("#s14-world", { opacity: 0, duration: F(18), ease: "power2.in" }, T(5427));
+    tl.fromTo("#s14-poster", { scale: 1 }, { scale: 1.008, duration: T(5813) - T(5427), ease: "none", immediateRender: false }, T(5427));
+    tl.to("#s14-frame", { opacity: 0.75, duration: F(60), ease: BREATH, repeat: 4, yoyo: true }, T(5427));
+
+    // f5487 HERO: gold word-by-word reveal across the recitation window, no SFX
+    words.forEach((w, i) => {
+      tl.to(w, { opacity: 1, y: 0, duration: F(6), ease: SETTLE }, T(landAt[i]));
+    });
+
+    // f5657 translation card
+    tl.to("#s14-tr", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(5657));
+
+    // f5774 the poster dims toward the final window
+    tl.to("#s14-poster", { opacity: 0.35, duration: F(39), ease: "power2.inOut" }, T(5774));
+
+    window.__timelines["s14-cta-dua"] = tl;
+  </script>
+</template>

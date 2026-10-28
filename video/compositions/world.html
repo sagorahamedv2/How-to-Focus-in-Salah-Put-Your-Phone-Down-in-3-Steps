@@ -1,0 +1,27 @@
+<template>
+  <style>
+    @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+    #root { position: absolute; inset: 0; overflow: hidden; background: #06211C; }
+    #world-canvas { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; display: block; }
+  </style>
+  <div id="root" data-composition-id="world" data-width="1920" data-height="1080" data-duration="195.6">
+    <canvas id="world-canvas" width="1920" height="1080"></canvas>
+  </div>
+  <script>
+    // The whole 3D film is drawn by assets/js/world/main.js from film time (hf-seek).
+    // Hold the render until the scene is built and every set has compiled once.
+    window.__hf = window.__hf || {};
+    window.__hf.buildReady = window.__hf.buildReady || {};
+    window.__hf.buildReady["world"] = new Promise((res) => { window.__worldBuilt = res; });
+    window.__timelines = window.__timelines || {};
+    window.__timelines["world"] = gsap.timeline({ paused: true }).to({}, { duration: 195.6 });
+  </script>
+  <script type="module">
+    import { start } from "./assets/js/world/main.js";
+    start(document.getElementById("world-canvas"), () => window.__worldBuilt && window.__worldBuilt())
+      .catch((e) => { const d = document.createElement("pre"); d.id = "world-err"; d.style.cssText = "position:absolute;left:40px;top:40px;color:#fff;font:20px monospace;white-space:pre-wrap;width:1800px;z-index:9"; d.textContent = String(e && e.stack || e); document.getElementById("world-canvas").parentNode.appendChild(d); window.__worldBuilt && window.__worldBuilt(); });
+  </script>
+</template>

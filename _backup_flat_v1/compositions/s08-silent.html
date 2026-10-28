@@ -1,0 +1,145 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s08-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    #s08-silent { position: absolute; left: 192px; top: 100px; font: 700 220px/1 "Fraunces", serif; letter-spacing: -2px; color: var(--gold); white-space: nowrap; transform-origin: 0% 0%; }
+    #s08-mock { position: absolute; left: 1180px; top: 40px; width: 560px; height: 700px; border-radius: 48px; background: var(--emerald-950); border: 10px solid var(--emerald-950); opacity: 0; }
+    #s08-screen { position: absolute; inset: 0; border-radius: 38px; background: var(--emerald-800); overflow: hidden; }
+    #s08-dim { position: absolute; inset: 0; background: var(--emerald-950); opacity: 0; }
+    .s08-t { position: absolute; font: 600 32px/1.2 "Inter", sans-serif; color: var(--sand-100); white-space: nowrap; }
+    .s08-row { position: absolute; left: 28px; width: 484px; height: 56px; border-radius: 14px; background: var(--emerald-600); }
+    .s08-row span { position: absolute; left: 20px; top: 11px; font: 600 32px/1.2 "Inter", sans-serif; color: var(--sand-100); }
+  </style>
+  <div data-hf-id="hf-82py" id="root" data-composition-id="s08-silent" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-scqb" id="s08-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+
+      <!-- window with minaret -->
+      <div data-hf-id="hf-3dki" class="abs" style="left:880px;top:130px;width:220px;height:330px;background:var(--sand-300);border-radius:110px 110px 8px 8px;"></div>
+      <div data-hf-id="hf-shjn" class="abs" style="left:894px;top:144px;width:192px;height:302px;background:var(--emerald-950);border-radius:96px 96px 4px 4px;overflow:hidden;">
+        <svg data-hf-id="hf-21gm" class="abs" style="left:54px;top:50px;" width="84" height="240" viewBox="0 0 120 420" preserveAspectRatio="xMidYMid meet"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/></svg>
+      </div>
+
+      <!-- nightstand + lamp -->
+      <div data-hf-id="hf-7h45" id="s08-lampglow" class="abs glow" style="left:1020px;top:480px;width:620px;height:620px;opacity:0.5;"></div>
+      <div data-hf-id="hf-lkls" class="abs" style="left:1260px;top:740px;width:400px;height:20px;background:var(--sand-300);border-radius:4px;"></div>
+      <div data-hf-id="hf-1psa" class="abs" style="left:1280px;top:760px;width:360px;height:120px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-scpb" class="abs" style="left:1300px;top:780px;width:320px;height:70px;background:var(--sand-300);border-radius:6px;"></div>
+      <svg data-hf-id="hf-wz6g" class="abs" style="left:1130px;top:700px;" width="90" height="162" viewBox="0 0 200 360"><path data-hf-id="hf-g2tq" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-0ibg" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-xlwh" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+    </div>
+
+    <!-- the phone on the nightstand, with the ring that becomes the library window -->
+    <svg data-hf-id="hf-ysnw" id="s08-phone" class="abs" style="left:1340px;top:300px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-9tr2" x="24" y="30" width="192" height="380" rx="24" fill="#FFD98A" opacity="0.4"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/></svg>
+
+    <div data-hf-id="hf-4gdf" id="s08-silent">Silent.</div>
+
+    <!-- phone UI mock -->
+    <div data-hf-id="hf-kiin" id="s08-mock">
+      <div data-hf-id="hf-bgn1" id="s08-screen">
+        <div data-hf-id="hf-nh6l" class="s08-t" id="s08-dnd" style="left:76px;top:30px;opacity:0;">Do Not Disturb</div>
+        <svg data-hf-id="hf-1ud2" id="s08-moon" class="abs" style="left:28px;top:28px;opacity:0;" width="40" height="40" viewBox="0 0 40 40"><path data-hf-id="hf-mxd3" d="M26 4 a16 16 0 1 0 10 24 a13 13 0 0 1 -10 -24z" fill="#F4EAD5"/></svg>
+
+        <div data-hf-id="hf-mkwm" class="s08-t" style="left:28px;top:112px;">Focus</div>
+        <svg data-hf-id="hf-uomd" id="s08-toggle" class="abs" style="left:380px;top:96px;" width="132" height="68" viewBox="0 0 132 68"><rect data-hf-id="hf-ly2e" id="s08-track" x="4" y="4" width="124" height="60" rx="30" fill="#5B6B66"/><circle data-hf-id="hf-4em8" id="s08-knob" cx="34" cy="34" r="24" fill="#F4EAD5"/></svg>
+
+        <!-- mini timeline with the Dhuhr slot -->
+        <svg data-hf-id="hf-ye5f" class="abs" style="left:0;top:200px;" width="540" height="190" viewBox="0 0 540 190">
+          <path data-hf-id="hf-h5o6" d="M40 90 H500" stroke="#F4EAD5" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+          <circle data-hf-id="hf-f85b" cx="40" cy="90" r="8" fill="#F4EAD5" fill-opacity="0.6"/><circle data-hf-id="hf-m82a" cx="500" cy="90" r="8" fill="#F4EAD5" fill-opacity="0.6"/>
+          <circle data-hf-id="hf-tvk1" cx="270" cy="90" r="12" fill="#F4EAD5"/>
+          <circle data-hf-id="hf-41h9" id="s08-ring" cx="270" cy="90" r="50" fill="none" stroke="#7FC4AE" stroke-width="8" stroke-linecap="round" pathLength="1" transform="rotate(-90 270 90)" style="stroke-dasharray:1;stroke-dashoffset:1;"/>
+        </svg>
+        <div data-hf-id="hf-kvq1" class="s08-t" style="left:200px;top:318px;">Dhuhr</div>
+        <div data-hf-id="hf-ybcz" class="s08-t" id="s08-15" style="left:380px;top:222px;opacity:0;">15 min</div>
+
+        <!-- contact filter -->
+        <div data-hf-id="hf-y4x5" class="s08-row" id="s08-r1" style="top:404px;"><span data-hf-id="hf-dfm5">Family</span></div>
+        <div data-hf-id="hf-i30n" class="s08-row" id="s08-r2" style="top:470px;"><span data-hf-id="hf-cj8m">Emergency</span></div>
+        <div data-hf-id="hf-4hqp" class="s08-row" id="s08-r3" style="top:536px;"><span data-hf-id="hf-s6kc">Work</span></div>
+        <div data-hf-id="hf-1a5y" class="s08-row" id="s08-r4" style="top:602px;"><span data-hf-id="hf-o3ce">Group chat</span></div>
+        <div data-hf-id="hf-owy1" id="s08-dim"></div>
+      </div>
+    </div>
+
+    <!-- clock that flips the toggle by itself -->
+    <svg data-hf-id="hf-229o" id="s08-clock" class="abs" style="left:1790px;top:280px;opacity:0;" width="100" height="100" viewBox="0 0 100 100"><circle data-hf-id="hf-3nt4" cx="50" cy="50" r="44" fill="#F4EAD5"/><circle data-hf-id="hf-ixfl" cx="50" cy="50" r="38" fill="#0B3D33"/><path data-hf-id="hf-x0gc" id="s08-hm" d="M50 50 V24" stroke="#F4EAD5" stroke-width="5" stroke-linecap="round"/><path data-hf-id="hf-qar8" id="s08-hh" d="M50 50 V32" stroke="#E3CFA6" stroke-width="6" stroke-linecap="round"/></svg>
+
+    <div data-hf-id="hf-93i8" id="s08-c1" class="callout">Family and emergencies only</div>
+  </div>
+  <script>
+    // Host starts at frame 2522 (9 frames before the cut at 2531).
+    const O = 2522, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set("#s08-phone", { scale: 0.45 });
+    gsap.set("#s08-mock", { scale: 0.2, y: 250, x: 0, transformOrigin: "50% 50%" });
+    gsap.set("#s08-silent", { y: 24, opacity: 0 });
+    gsap.set("#s08-c1", { y: 24 });
+    gsap.set("#s08-hm", { transformOrigin: "50px 50px" });
+    gsap.set("#s08-hh", { transformOrigin: "50px 50px" });
+    gsap.set(["#s08-r3", "#s08-r4"], { opacity: 1 });
+
+    // Camera pull in (1.06 -> 1) with a crossfade over the locker scene
+    tl.fromTo("#s08-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.fromTo("#s08-phone", { opacity: 0 }, { opacity: 1, duration: F(18), ease: "power2.out", immediateRender: false }, 0);
+    tl.to("#s08-lampglow", { opacity: 0.85, duration: F(45), ease: BREATH, repeat: 8, yoyo: true }, 0);
+
+    // f2528 SILENT holds the upper left
+    tl.to("#s08-silent", { opacity: 1, y: 0, duration: F(18), ease: SNAP }, T(2528));
+    tl.to("#s08-silent", { scale: 0.26, y: -30, duration: F(24), ease: GLIDE }, T(2570));
+
+    // f2592 HERO "focus mode": the phone opens into the UI mock, the focus toggle flips, the screen dims
+    tl.to("#s08-phone", { opacity: 0, duration: F(10), ease: EXIT }, T(2592));
+    tl.to("#s08-mock", { opacity: 1, scale: 1, x: 0, y: 0, duration: F(24), ease: GLIDE }, T(2592));
+    tl.to("#s08-knob", { attr: { cx: 98 }, duration: F(10), ease: SNAP }, T(2597));
+    tl.to("#s08-track", { attr: { fill: "#7FC4AE" }, duration: F(10) }, T(2597));
+    tl.to("#s08-dim", { opacity: 0.35, duration: F(18), ease: "power2.inOut" }, T(2597));
+
+    // f2636 "Do Not Disturb"
+    tl.to(["#s08-moon", "#s08-dnd"], { opacity: 1, duration: F(12), ease: SETTLE }, T(2636));
+
+    // f2705 "fifteen minutes": a ring forms round the Dhuhr slot (linear is allowed on the ring)
+    tl.to("#s08-ring", { strokeDashoffset: 0, duration: F(40), ease: "none" }, T(2705));
+    tl.to("#s08-15", { opacity: 1, duration: F(12), ease: SETTLE }, T(2709));
+
+    // f2774 callout; f2801 "calls from family": only Family and Emergency stay bright
+    tl.to("#s08-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(2774));
+    tl.to("#s08-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(2774 + 12 + 70));
+    tl.to(["#s08-r3", "#s08-r4"], { opacity: 0.3, duration: F(14), ease: "power2.inOut" }, T(2801));
+
+    // f2912 "decision for you": a clock ticks and the toggle flips on its own, no hand
+    tl.to("#s08-clock", { opacity: 1, duration: F(10), ease: SETTLE }, T(2870));
+    tl.to("#s08-knob", { attr: { cx: 34 }, duration: F(8), ease: "power2.inOut" }, T(2880));
+    tl.to("#s08-track", { attr: { fill: "#5B6B66" }, duration: F(8) }, T(2880));
+    tl.to("#s08-hm", { rotation: 360 * 2, duration: F(42), ease: "none" }, T(2875));
+    tl.to("#s08-hh", { rotation: 60, duration: F(42), ease: "none" }, T(2875));
+    tl.to("#s08-knob", { attr: { cx: 98 }, duration: F(10), ease: SNAP }, T(2912));
+    tl.to("#s08-track", { attr: { fill: "#7FC4AE" }, duration: F(10) }, T(2912));
+    tl.to("#s08-clock", { opacity: 0, duration: F(12), ease: EXIT }, T(2940));
+
+    window.__timelines["s08-silent"] = tl;
+  </script>
+</template>

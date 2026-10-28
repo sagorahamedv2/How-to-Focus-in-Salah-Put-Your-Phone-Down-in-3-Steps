@@ -1,0 +1,2096 @@
+{
+  "version": 1,
+  "historyId": "ecb087fe-8983-418f-abb9-dfb0c3fba210",
+  "currentRevision": "84f452d7-9eeb-4964-a10c-ee1081ae1889",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "CLAUDE.md": {
+      "hash": "1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1b\\1b36171117cb7c18f4100a0db6a3782ff2e096115995733200445cc2e80a4060"
+    },
+    "SPEC.md": {
+      "hash": "80ec83205db1d4b303d5f4cc16621b099f3451a47559e9b6b296782e6b353310",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\80\\80ec83205db1d4b303d5f4cc16621b099f3451a47559e9b6b296782e6b353310"
+    },
+    "STORYBOARD.md": {
+      "hash": "e477c3c7da1f067f74c14ed23c7db4598c14f36ce99717fe3586b354fba46f97",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e4\\e477c3c7da1f067f74c14ed23c7db4598c14f36ce99717fe3586b354fba46f97"
+    },
+    "STORYLINES.md": {
+      "hash": "a45e9653acacdd64e478e3272b29f27f7e287199d49deb9d23f39ff5449e48dc",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a4\\a45e9653acacdd64e478e3272b29f27f7e287199d49deb9d23f39ff5449e48dc"
+    },
+    "assets/audio/vo.anchors.json": {
+      "hash": "0e634cdabcea0f0966ecf1abee476846419310788dcbda5901e21885c07bb3cf",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0e\\0e634cdabcea0f0966ecf1abee476846419310788dcbda5901e21885c07bb3cf"
+    },
+    "assets/audio/vo.transcript.json": {
+      "hash": "2f1c2a8255a48143edb5feb082208aada7388343f2160174730623a36fd2d5ed",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2f\\2f1c2a8255a48143edb5feb082208aada7388343f2160174730623a36fd2d5ed"
+    },
+    "assets/fonts/amiri-arabic-400-normal.woff2": {
+      "hash": "9abf8a10b4a2f27b698740522c9beec9ded7728aeef0738ac0d6e175bf6249d7",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9a\\9abf8a10b4a2f27b698740522c9beec9ded7728aeef0738ac0d6e175bf6249d7"
+    },
+    "assets/fonts/amiri-arabic-700-normal.woff2": {
+      "hash": "c775d9f8c3a7cf0d0c2bb5246dd699e8c09bf6f8758e1be0b98939331b18bcce",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c7\\c775d9f8c3a7cf0d0c2bb5246dd699e8c09bf6f8758e1be0b98939331b18bcce"
+    },
+    "assets/fonts/fonts.css": {
+      "hash": "c2f822aad27c854ce3840269dc6ba39ee08e1bab717476df36b5e974e9304583",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c2\\c2f822aad27c854ce3840269dc6ba39ee08e1bab717476df36b5e974e9304583"
+    },
+    "assets/fonts/fraunces-latin-600-normal.woff2": {
+      "hash": "3a1de7711d147bad4422825045f87597fd77cca72e7c96d3b0a81735d00dda82",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3a\\3a1de7711d147bad4422825045f87597fd77cca72e7c96d3b0a81735d00dda82"
+    },
+    "assets/fonts/fraunces-latin-700-normal.woff2": {
+      "hash": "c38570d224b830056e69484bb9e768e1d3fa7ba4755c8891a3c6d366194d2ff3",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c3\\c38570d224b830056e69484bb9e768e1d3fa7ba4755c8891a3c6d366194d2ff3"
+    },
+    "assets/fonts/inter-latin-400-normal.woff2": {
+      "hash": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\89\\8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+    },
+    "assets/fonts/inter-latin-600-normal.woff2": {
+      "hash": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f9\\f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a"
+    },
+    "assets/fonts/noto-naskh-arabic-arabic-400-normal.woff2": {
+      "hash": "9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9c\\9cc2d2e90f7b51904468558b4ed529de8a8206497c8edb5e33122bd077e0158c"
+    },
+    "assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2": {
+      "hash": "d2d8e6b155248d6706e2e9c6019e88d435873801efe3d5a3ed6f0ab69aa1511e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d2\\d2d8e6b155248d6706e2e9c6019e88d435873801efe3d5a3ed6f0ab69aa1511e"
+    },
+    "assets/sfx/anchor-thud.wav": {
+      "hash": "3df2534252afa2f1c5ec1d395069f7f8cc3d7d517854f9581b2cf00e49d646c2",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3d\\3df2534252afa2f1c5ec1d395069f7f8cc3d7d517854f9581b2cf00e49d646c2"
+    },
+    "assets/sfx/door-slide.wav": {
+      "hash": "4bb2f5ea44fb942d7994d3c9e6a46cb8dff38ff8a5af616b0ca2558782fbfc07",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4b\\4bb2f5ea44fb942d7994d3c9e6a46cb8dff38ff8a5af616b0ca2558782fbfc07"
+    },
+    "assets/sfx/drawer-close.wav": {
+      "hash": "288292e5c0dc8a04131c34f18212b1f601701021ea41027d26ca1ba00e1180d3",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\28\\288292e5c0dc8a04131c34f18212b1f601701021ea41027d26ca1ba00e1180d3"
+    },
+    "assets/sfx/locker-door.wav": {
+      "hash": "2b36193e1f0f026f597a0fe604b7b9e5496036b417a0186e6a52740d1cedc5dc",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2b\\2b36193e1f0f026f597a0fe604b7b9e5496036b417a0186e6a52740d1cedc5dc"
+    },
+    "assets/sfx/magnet-click.wav": {
+      "hash": "a5184595f04fbce616ce41496f9f3faef19965bf808a644972543246b9096c8b",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a5\\a5184595f04fbce616ce41496f9f3faef19965bf808a644972543246b9096c8b"
+    },
+    "assets/sfx/notification.wav": {
+      "hash": "9755985a96cb87820a5d98a7bd775e38bf571227f55f3dcd129e2863c35f58b4",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\97\\9755985a96cb87820a5d98a7bd775e38bf571227f55f3dcd129e2863c35f58b4"
+    },
+    "assets/sfx/phone-buzz.wav": {
+      "hash": "a267b100a935db40e69addb64df5e3b7aa7f3b93697259a8ca4970d8abbcfc6a",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a2\\a267b100a935db40e69addb64df5e3b7aa7f3b93697259a8ca4970d8abbcfc6a"
+    },
+    "assets/sfx/pop-a.wav": {
+      "hash": "c1dac0f9f081f0e44a2baacbf39efeda6c6a00e74be0de9e6cf108559759b697",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c1\\c1dac0f9f081f0e44a2baacbf39efeda6c6a00e74be0de9e6cf108559759b697"
+    },
+    "assets/sfx/pop-b.wav": {
+      "hash": "a72c62bd5114b2502b3d8b2e08343fc7e67ab2a52c3e7b2131bcc5ad5c5e2fb6",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a7\\a72c62bd5114b2502b3d8b2e08343fc7e67ab2a52c3e7b2131bcc5ad5c5e2fb6"
+    },
+    "assets/sfx/riser-impact.wav": {
+      "hash": "a56c157b57cb215758b28d4d3898ced940e8574679d9390cdf0ae21afbc150bc",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a5\\a56c157b57cb215758b28d4d3898ced940e8574679d9390cdf0ae21afbc150bc"
+    },
+    "assets/sfx/sfx.json": {
+      "hash": "3f7fbd4105463cd7ed377b0d80a9a10a76ba635b79d32ae663871cc84abe7512",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3f\\3f7fbd4105463cd7ed377b0d80a9a10a76ba635b79d32ae663871cc84abe7512"
+    },
+    "assets/sfx/tap.wav": {
+      "hash": "f4268eb6c91eeae15e41c8fe9f02ad761ad099088f7e87e67e55e5de9827a8f0",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f4\\f4268eb6c91eeae15e41c8fe9f02ad761ad099088f7e87e67e55e5de9827a8f0"
+    },
+    "assets/sfx/tick.wav": {
+      "hash": "dd8335db48873e76c0db1284966668c6728855c9ed37cf7e3c4af56401749c85",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\dd\\dd8335db48873e76c0db1284966668c6728855c9ed37cf7e3c4af56401749c85"
+    },
+    "assets/sfx/toggle-click.wav": {
+      "hash": "0ae05963a7d5b41c8dd140ac9b9266a492e86139dea977ad2bc126e31f67f6c8",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0a\\0ae05963a7d5b41c8dd140ac9b9266a492e86139dea977ad2bc126e31f67f6c8"
+    },
+    "assets/sfx/water-drip.wav": {
+      "hash": "cfc426760352e5fa779d67c51162da4fd3cf4ef19cd38267a634f2d24614474e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cf\\cfc426760352e5fa779d67c51162da4fd3cf4ef19cd38267a634f2d24614474e"
+    },
+    "assets/sfx/whoosh-a.wav": {
+      "hash": "8b6d8064202afa68a0ef3f669a3ca53cac4919e353b1145dcbeaf2def6a9aded",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8b\\8b6d8064202afa68a0ef3f669a3ca53cac4919e353b1145dcbeaf2def6a9aded"
+    },
+    "assets/sfx/whoosh-b.wav": {
+      "hash": "2aad92ab96a297e17ae45aeb10055460d240feed5bfc80a810de701a81a79109",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2a\\2aad92ab96a297e17ae45aeb10055460d240feed5bfc80a810de701a81a79109"
+    },
+    "assets/sfx/whoosh-c.wav": {
+      "hash": "3ce9a07f28697904631aa83d34549d77099693d3ec9f4bb291e6ec04a0e64acf",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3c\\3ce9a07f28697904631aa83d34549d77099693d3ec9f4bb291e6ec04a0e64acf"
+    },
+    "assets/svg/alarm-clock.svg": {
+      "hash": "54422bd1bb944efa529369a86c2ae95c42cf9fd045b9fc4947a90966435bd7ec",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\54\\54422bd1bb944efa529369a86c2ae95c42cf9fd045b9fc4947a90966435bd7ec"
+    },
+    "assets/svg/anchor.svg": {
+      "hash": "81392b1435ccd1029d2fafa8e9cfb52f2d2d6962df3f6578186edab30ef0c15e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\81\\81392b1435ccd1029d2fafa8e9cfb52f2d2d6962df3f6578186edab30ef0c15e"
+    },
+    "assets/svg/bag.svg": {
+      "hash": "338c38ed4758e7dadcd54969baa09cd1b8c5e45be24edeefae6067cc49c6a404",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\33\\338c38ed4758e7dadcd54969baa09cd1b8c5e45be24edeefae6067cc49c6a404"
+    },
+    "assets/svg/basin.svg": {
+      "hash": "5c3138f7eeb769d1ecb28df490c4005309ac6845708cec912486d9083ba778d7",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5c\\5c3138f7eeb769d1ecb28df490c4005309ac6845708cec912486d9083ba778d7"
+    },
+    "assets/svg/book.svg": {
+      "hash": "69783bee5e920b787000ce7e36ee58027ca7273dc39228daedc3db7839a8b90d",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\69\\69783bee5e920b787000ce7e36ee58027ca7273dc39228daedc3db7839a8b90d"
+    },
+    "assets/svg/breath-circle.svg": {
+      "hash": "c3be533efa145838b5a3f5daeb8d9f983e390a242d3a8e2a65554ac69ad1d35d",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c3\\c3be533efa145838b5a3f5daeb8d9f983e390a242d3a8e2a65554ac69ad1d35d"
+    },
+    "assets/svg/chair.svg": {
+      "hash": "d3e62c3e65fcd3af0c6480ca3aae9763f74570e6e6f365c0ccfecb4fb8f825f5",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d3\\d3e62c3e65fcd3af0c6480ca3aae9763f74570e6e6f365c0ccfecb4fb8f825f5"
+    },
+    "assets/svg/chat-bubble.svg": {
+      "hash": "91a580cf6ff9aa9115924790f3767bc2aa63b4b037e2e36ce433d6a95a85ffb1",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\91\\91a580cf6ff9aa9115924790f3767bc2aa63b4b037e2e36ce433d6a95a85ffb1"
+    },
+    "assets/svg/checklist.svg": {
+      "hash": "3948dcb2da9f17a964b1931a745d3c8c4f581c07c72b44e162665a3b5fb64220",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\39\\3948dcb2da9f17a964b1931a745d3c8c4f581c07c72b44e162665a3b5fb64220"
+    },
+    "assets/svg/clock.svg": {
+      "hash": "df28cb547fd3530ca89ebcd667d8caa15ea13d23a6d08026ffc59a456e88e52e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\df\\df28cb547fd3530ca89ebcd667d8caa15ea13d23a6d08026ffc59a456e88e52e"
+    },
+    "assets/svg/desk-top.svg": {
+      "hash": "36c5b9f1e2ac743b45c11593ecc66b5ead725ad59547c321def357429f2bd87f",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\36\\36c5b9f1e2ac743b45c11593ecc66b5ead725ad59547c321def357429f2bd87f"
+    },
+    "assets/svg/door.svg": {
+      "hash": "0e265e1791b6bbd96ec20b7043f254f8293c988274bdeede86b76fc80b880e00",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0e\\0e265e1791b6bbd96ec20b7043f254f8293c988274bdeede86b76fc80b880e00"
+    },
+    "assets/svg/drawer.svg": {
+      "hash": "0a584c515f760d97bf1745c53304d2e557d2dee72ecc64409cb02948a1725a6e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0a\\0a584c515f760d97bf1745c53304d2e557d2dee72ecc64409cb02948a1725a6e"
+    },
+    "assets/svg/fridge.svg": {
+      "hash": "f7d53bf286a6e157fc778abe0f4aecc8ef42eb02858b18c2be37e12b5d5716c9",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f7\\f7d53bf286a6e157fc778abe0f4aecc8ef42eb02858b18c2be37e12b5d5716c9"
+    },
+    "assets/svg/hand.svg": {
+      "hash": "452075093415d3fb489fdd79532b17a56eca4e91a58d31da42ad33993fba2de8",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\45\\452075093415d3fb489fdd79532b17a56eca4e91a58d31da42ad33993fba2de8"
+    },
+    "assets/svg/lamp.svg": {
+      "hash": "7364a6a4b45508617c98b31897037c2dadc5cf468d458819ee8fe9e392899c93",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\73\\7364a6a4b45508617c98b31897037c2dadc5cf468d458819ee8fe9e392899c93"
+    },
+    "assets/svg/locker.svg": {
+      "hash": "cfe03fcd09896bfbaac6fb4e0e42b98967605307fe58f089c745acd78b2702cd",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cf\\cfe03fcd09896bfbaac6fb4e0e42b98967605307fe58f089c745acd78b2702cd"
+    },
+    "assets/svg/minaret.svg": {
+      "hash": "45f157c97bd8198cd758d097fe386be04a0830d7d83439ea4187366877fc3f2f",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\45\\45f157c97bd8198cd758d097fe386be04a0830d7d83439ea4187366877fc3f2f"
+    },
+    "assets/svg/phone-facedown.svg": {
+      "hash": "a8d709edbdb10244ab8ce0b2271d41b6647cc4efc017f0a6676d75ac9ec2a7b8",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a8\\a8d709edbdb10244ab8ce0b2271d41b6647cc4efc017f0a6676d75ac9ec2a7b8"
+    },
+    "assets/svg/phone.svg": {
+      "hash": "2487ae291b6cfd38c016817ad0b540f36ae6252479f0f4c9587add0f3d526ce6",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\24\\2487ae291b6cfd38c016817ad0b540f36ae6252479f0f4c9587add0f3d526ce6"
+    },
+    "assets/svg/prayer-mat.svg": {
+      "hash": "c1d77b367a900fe7034b50d66c49aea8268956f4e5027288d7b54614b647ca6b",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c1\\c1d77b367a900fe7034b50d66c49aea8268956f4e5027288d7b54614b647ca6b"
+    },
+    "assets/svg/timetable.svg": {
+      "hash": "273371f6b52e1bac569720ade80d28108c66622881ea4e2aab392b935c3b0706",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\27\\273371f6b52e1bac569720ade80d28108c66622881ea4e2aab392b935c3b0706"
+    },
+    "assets/svg/watch.svg": {
+      "hash": "253019c7526de080157bc56fa9ef1134ba79c3d027fda75695e979f9ed0b11ca",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\25\\253019c7526de080157bc56fa9ef1134ba79c3d027fda75695e979f9ed0b11ca"
+    },
+    "assets/svg/water-drop.svg": {
+      "hash": "aff19d5dc5f03d2cf9dfff296cb18379ce422838ce52847ac1c9a880a312a224",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\af\\aff19d5dc5f03d2cf9dfff296cb18379ce422838ce52847ac1c9a880a312a224"
+    },
+    "assets/text/arabic.json": {
+      "hash": "bd9e66a655a3d5a61ca7ac364cadf126f33dac67cbb9a0915ad5795b3247bc5c",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bd\\bd9e66a655a3d5a61ca7ac364cadf126f33dac67cbb9a0915ad5795b3247bc5c"
+    },
+    "compositions/s01-hook.html": {
+      "hash": "046791a2ffb05f966472bf7711b12be9e2ff544dd00c50fb7d2fe5775aafedb3",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\04\\046791a2ffb05f966472bf7711b12be9e2ff544dd00c50fb7d2fe5775aafedb3"
+    },
+    "compositions/s02-salam.html": {
+      "hash": "a3a454b126f7f642c1627a4e25b62c45a1b356569ac02ac61ad9c8eabff602a6",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a3\\a3a454b126f7f642c1627a4e25b62c45a1b356569ac02ac61ad9c8eabff602a6"
+    },
+    "compositions/s03-ayah.html": {
+      "hash": "7ef61d93eb418e78e1432a013e892ff8d6243c8921257625c97abde1f5dec614",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7e\\7ef61d93eb418e78e1432a013e892ff8d6243c8921257625c97abde1f5dec614"
+    },
+    "compositions/s04-khushu.html": {
+      "hash": "05c65823ae6cb0c8e6ec484c5e1dd3f9ff0e7fcc38ef6bb900cfd84f136546e0",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\05\\05c65823ae6cb0c8e6ec484c5e1dd3f9ff0e7fcc38ef6bb900cfd84f136546e0"
+    },
+    "compositions/s05-three-words.html": {
+      "hash": "249ee2b4a70aa7ff21fee5aa37485409454878e4154cfae72ff92ab14a8390a7",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\24\\249ee2b4a70aa7ff21fee5aa37485409454878e4154cfae72ff92ab14a8390a7"
+    },
+    "hyperframes.json": {
+      "hash": "53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\53\\53dbce1e19aa713cbb12ee0bc4d206143b45ab15e6ffbfcaa8f69572d4d24d50"
+    },
+    "index.html": {
+      "hash": "13204252b278547fc9e62fcd27d6e0ae0430d02b9f770587a680546a21bd78c4",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\13\\13204252b278547fc9e62fcd27d6e0ae0430d02b9f770587a680546a21bd78c4"
+    },
+    "meta.json": {
+      "hash": "8364befe95ec6ff460e9dc239408d510e81ece3e42773215f9e69d6a4c00e316",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\83\\8364befe95ec6ff460e9dc239408d510e81ece3e42773215f9e69d6a4c00e316"
+    },
+    "package.json": {
+      "hash": "6cb289193464ca9d65e44541382b5829f73b67e79c090519d3233dd47acf78a7",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\6c\\6cb289193464ca9d65e44541382b5829f73b67e79c090519d3233dd47acf78a7"
+    },
+    "assets/audio/vo.wav": {
+      "hash": "78646f4a8729c5e7aab03f51080c8f347a8a69cb3de6f7194aed295730fe5c4b",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\78\\78646f4a8729c5e7aab03f51080c8f347a8a69cb3de6f7194aed295730fe5c4b"
+    },
+    "compositions/s06-away.html": {
+      "hash": "65eb8170fce9c208a057083f08bef3ad41ecf4487acec554cb82aed656a01786",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\65\\65eb8170fce9c208a057083f08bef3ad41ecf4487acec554cb82aed656a01786"
+    },
+    "compositions/s07-away-example.html": {
+      "hash": "5d9defd2d36b6ae84e2cb1913ea3463b4b0916d6b13adfaf97149366b858155b",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5d\\5d9defd2d36b6ae84e2cb1913ea3463b4b0916d6b13adfaf97149366b858155b"
+    },
+    "compositions/s08-silent.html": {
+      "hash": "fdd3e03008375b8aaf6794e14e452277f6e1c8481687a4baf656deee5088b75a",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\fd\\fdd3e03008375b8aaf6794e14e452277f6e1c8481687a4baf656deee5088b75a"
+    },
+    "compositions/s09-silent-ex.html": {
+      "hash": "540b4f340f271c1979196965d3fe0520d8a332dabcfb94829be4b4274c123aff",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\54\\540b4f340f271c1979196965d3fe0520d8a332dabcfb94829be4b4274c123aff"
+    },
+    "compositions/s10-replace.html": {
+      "hash": "bcf70787aaaa3869e1e55579a07c9243aac185ac99a63aad02edbdd406703732",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bc\\bcf70787aaaa3869e1e55579a07c9243aac185ac99a63aad02edbdd406703732"
+    },
+    "compositions/s11-dhuhr.html": {
+      "hash": "a628ac79da71258d7cf1ee9952955e3bb206e515967a5b1b1afdb69161a0417e",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a6\\a628ac79da71258d7cf1ee9952955e3bb206e515967a5b1b1afdb69161a0417e"
+    },
+    "compositions/s12-objection.html": {
+      "hash": "8a6efe0e3154e21a05eec6a7aa19be1c6a0c42456cc96bb99720c9b9f252873c",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8a\\8a6efe0e3154e21a05eec6a7aa19be1c6a0c42456cc96bb99720c9b9f252873c"
+    },
+    "compositions/s13-start-small.html": {
+      "hash": "bfc2ad69cee04b4b81a5ec3f1f5f0f549e5be5f31f8746e9c8a2588d24210597",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bf\\bfc2ad69cee04b4b81a5ec3f1f5f0f549e5be5f31f8746e9c8a2588d24210597"
+    },
+    "compositions/s14-cta-dua.html": {
+      "hash": "2bbca04ae5dc285f9b37297aa26bed2652c46f6a8457ff2936d2fc9e4649c15f",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2b\\2bbca04ae5dc285f9b37297aa26bed2652c46f6a8457ff2936d2fc9e4649c15f"
+    },
+    "compositions/s15-salam.html": {
+      "hash": "3e8cf6f909d628b0b55d540dc3f9fca055f5787bf62e9497bd3547c6cf2cfbed",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3e\\3e8cf6f909d628b0b55d540dc3f9fca055f5787bf62e9497bd3547c6cf2cfbed"
+    },
+    "assets/js/world/kit.js": {
+      "hash": "2e44797ab9dd38df6c5506339feb57f824b39e2925095da2e6a78d4a8f491d19",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2e\\2e44797ab9dd38df6c5506339feb57f824b39e2925095da2e6a78d4a8f491d19"
+    },
+    "assets/js/world/props.js": {
+      "hash": "de30107398fb54ebe328c55c869cd85f81db6206997e4a092402168e92b858f5",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\de\\de30107398fb54ebe328c55c869cd85f81db6206997e4a092402168e92b858f5"
+    },
+    "assets/js/world/main.js": {
+      "hash": "69b386f4750e6f02372a2f007205c0281f16b05c629c94f6f8149e32429fbde0",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\69\\69b386f4750e6f02372a2f007205c0281f16b05c629c94f6f8149e32429fbde0"
+    },
+    "assets/js/world/stations.js": {
+      "hash": "400e0335ed8c3cb3e8ad4987e4c0efb9d6299245966d38a5673115d9bad0b507",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\40\\400e0335ed8c3cb3e8ad4987e4c0efb9d6299245966d38a5673115d9bad0b507"
+    },
+    "assets/js/world/stations2.js": {
+      "hash": "4ba132aca9479c7c9caa361fb23d76792d3dc7916d200d88a4d383c429dafa84",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4b\\4ba132aca9479c7c9caa361fb23d76792d3dc7916d200d88a4d383c429dafa84"
+    },
+    "compositions/world.html": {
+      "hash": "12c1e5796ddd848d1c096677835b7064384529b58f9382f8368c95a0870cc795",
+      "content": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\12\\12c1e5796ddd848d1c096677835b7064384529b58f9382f8368c95a0870cc795"
+    }
+  },
+  "revisions": {
+    "66bcab71-bfa2-4539-b02f-ed6590fb3ef6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792908260818,
+      "endedAt": 1792908260863,
+      "files": {
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\51\\51a25d15db71fe456fcfc211f94265b3453cbf464d9fd35833af07613dae916e",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bf\\bf64984612c7689e3848c804d7fa5f4a9c67c02c46cbe2307569fba60651ec73"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\30\\302691d339f853fcb84f52c6a9ee5f6a11376248531356c722973053efb29685",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f8\\f89df52ae2b01a6cd97e4d4c9988e53c2e8718a3ac05c19523eb8b348ed113d0"
+        },
+        "compositions/s03-ayah.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4e\\4e5ac979b04565667cbb1a5ca0bc51facb370529c86b8c9e6bf1639f47b37c0e",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\28\\28e36a88f113a21de0665140326412175980682b2a516d72cb791f9176d35454"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3c\\3c6c8f415262538e49c0deb02f6db10671c925cb64f988ca971e91ad4e4297ad",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d8\\d8c11d7a11dad5336b8c2a234473a2b3093e3b83bc4a03cf544f1dfd4f6d82b1"
+        },
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3c\\3c847ab443dd6031dae753b6cafffdf24637d3109a34c7d47deff8696ae8cec9",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\dd\\dd05575927807cec65fefe13bc576e2bc2f5ed8524b9d056b1cb4ec298bd6428"
+        }
+      }
+    },
+    "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792908344089,
+      "endedAt": 1792908344120,
+      "files": {
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bf\\bf64984612c7689e3848c804d7fa5f4a9c67c02c46cbe2307569fba60651ec73",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\09\\09e2dc177451e47332771f8f98e016f4350d719755d5a06b8887dad9932bfa3c"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f8\\f89df52ae2b01a6cd97e4d4c9988e53c2e8718a3ac05c19523eb8b348ed113d0",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\44\\44d70609af88cc3c765358fa3e3a135c023378fa86cd5fd6cca32d46f5e6b67d"
+        },
+        "compositions/s03-ayah.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\28\\28e36a88f113a21de0665140326412175980682b2a516d72cb791f9176d35454",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\de\\de62caceb3593e748cc4bd7ca59f61c6fae0a5b64e89afe087a6cf554ad32205"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d8\\d8c11d7a11dad5336b8c2a234473a2b3093e3b83bc4a03cf544f1dfd4f6d82b1",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5f\\5f81a22c5a82a90ff8624a0ae0d4e56e8c1cbae73cc199972bfd14ed05370093"
+        },
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\dd\\dd05575927807cec65fefe13bc576e2bc2f5ed8524b9d056b1cb4ec298bd6428",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\53\\535ed7da210ceeb7d5db62e29fe8145e56b8465859ca7e688519b72e476aad1b"
+        }
+      }
+    },
+    "bc208fba-bd93-4ecf-9b9a-eaee0b23911e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792908373367,
+      "endedAt": 1792908373387,
+      "files": {
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\09\\09e2dc177451e47332771f8f98e016f4350d719755d5a06b8887dad9932bfa3c",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e6\\e6c268b02cb97f8e2e0dfb8cc9dafcc1627d08cbb3d4891956022ad3b8b1a73b"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\44\\44d70609af88cc3c765358fa3e3a135c023378fa86cd5fd6cca32d46f5e6b67d",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1b\\1bd5b91d48ebb7e0948d75997dc00d0517022f1dbb6ec8eb2cac12cd8eac3073"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5f\\5f81a22c5a82a90ff8624a0ae0d4e56e8c1cbae73cc199972bfd14ed05370093",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\39\\39a2f38875be1f5e923c3054f3b074f4a391746549f1feeb8534a19659dac323"
+        }
+      }
+    },
+    "268624b9-ae6e-45d8-b04a-e76a7a6b1451": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792909580186,
+      "endedAt": 1792909580485,
+      "files": {
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e6\\e6c268b02cb97f8e2e0dfb8cc9dafcc1627d08cbb3d4891956022ad3b8b1a73b",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a4\\a435cd358464544ea339878fa41dbd955153fd3775df5d36a42e4508d687847d"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1b\\1bd5b91d48ebb7e0948d75997dc00d0517022f1dbb6ec8eb2cac12cd8eac3073",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\67\\67ffe9ca286794acce03bad45433ff4d3504a8d354d0977720dadb04ff56a513"
+        },
+        "compositions/s03-ayah.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\de\\de62caceb3593e748cc4bd7ca59f61c6fae0a5b64e89afe087a6cf554ad32205",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7d\\7dfd452946dcdeeb7108eba92da23e0d0f79cb6705f80688bb2612bf8fbb6ed7"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\39\\39a2f38875be1f5e923c3054f3b074f4a391746549f1feeb8534a19659dac323",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\09\\098d692c19456649668da382cf248afa5bb7f237ea520532e1f97e45991a49ee"
+        },
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\53\\535ed7da210ceeb7d5db62e29fe8145e56b8465859ca7e688519b72e476aad1b",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8d\\8dd5a0ecf9bba4daf5b47561ede6bd359b3747635e503f996d12b86b3624eb87"
+        },
+        "compositions/s06-away.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\72\\729109771e8f707e8537e8fe2f40c776c37d07cfebb51329a61d13c738d10714"
+        },
+        "compositions/s07-away-example.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0d\\0d6a1d9a98577decb524a5fae81e454b431a324afc60aefea565f5f62bc27b9c"
+        },
+        "compositions/s08-silent.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c0\\c036acce37513aa5c355b5a398c07f46ef4eb964dad4364612a71e32bbc27ee6"
+        },
+        "compositions/s09-silent-ex.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\89\\89d26c25a2802e9f77777cf74b68c5963165eb031b73f45781c1f2c4ddeb0fe2"
+        },
+        "compositions/s10-replace.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e6\\e64c633801b03532fbd2338ccaf0d8066357b5c8b53b1e23ff8d5b33c0ccb65f"
+        },
+        "compositions/s11-dhuhr.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\b1\\b168195e26d1a35389a9771978b02b7cbfc5ab6a6bdd7aae9b228709d15c4c18"
+        },
+        "compositions/s12-objection.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c9\\c967a974b8994e3c8521e7a46dd7d2f687379eba578f1f8360727ea6b65eee83"
+        },
+        "compositions/s13-start-small.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8e\\8ee36fbcdad8869a0041cc2eb50639fec7d7ebb83ae2cfba45e6f5a6182e6169"
+        },
+        "compositions/s14-cta-dua.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a9\\a9237f3b1787be8d91ff0c57048da190196023c659eeb9753cdf4709f7d18e15"
+        },
+        "compositions/s15-salam.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f2\\f2d4a16dd17d7d3eb7fbd84987d5c55bd1e60a8cc5500a151989915b824ea754"
+        },
+        "index.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\b2\\b2786bc97f7cff4acb641bbc0889fd79a69048ec22eea8e59240ec1d4433e249",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e5\\e5a939db6634a8d960f36569be40d0ee2ed170fbf5b85545b7fda7b362c3eb65"
+        }
+      }
+    },
+    "a2aee77d-4fc2-415d-ba96-5ce155d0ee3b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910574740,
+      "endedAt": 1792910576752,
+      "files": {
+        "assets/js/world/kit.js": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\53\\5398c66478500937f00bc3488bc0ac4e362338340cb7691a2d9392b6b825727c"
+        }
+      }
+    },
+    "ac8a17e7-6761-49b6-8cef-986fe24a14a8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910587782,
+      "endedAt": 1792910590902,
+      "files": {
+        "assets/js/world/kit.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\53\\5398c66478500937f00bc3488bc0ac4e362338340cb7691a2d9392b6b825727c",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2e\\2e44797ab9dd38df6c5506339feb57f824b39e2925095da2e6a78d4a8f491d19"
+        }
+      }
+    },
+    "6b681b6f-0a92-4e3b-8a61-13a33d5997d9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910719605,
+      "endedAt": 1792910721682,
+      "files": {
+        "assets/js/world/props.js": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\45\\45b51fb91b68e5af44a0ac235352940cd2d26ff20ae3788053d16b8852dcad2d"
+        }
+      }
+    },
+    "ed596122-b507-4c1f-ab28-9711e9d4e700": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910731280,
+      "endedAt": 1792910733281,
+      "files": {
+        "assets/js/world/props.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\45\\45b51fb91b68e5af44a0ac235352940cd2d26ff20ae3788053d16b8852dcad2d",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9c\\9c6537a808c1a905bca4c8411062b4e5afcadf5c23035795961daf57ae968642"
+        }
+      }
+    },
+    "33c89c04-3646-40cf-a432-511c134dba41": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910822072,
+      "endedAt": 1792910824074,
+      "files": {
+        "assets/js/world/main.js": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\69\\69b386f4750e6f02372a2f007205c0281f16b05c629c94f6f8149e32429fbde0"
+        }
+      }
+    },
+    "b7765472-c53a-493f-b50f-0e611bce8e1a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910973655,
+      "endedAt": 1792910975670,
+      "files": {
+        "assets/js/world/stations.js": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1d\\1d7ce5653bbe8966f3ef7ef27479008eaccc8ad28d64587a872b14116420ce5a"
+        }
+      }
+    },
+    "25f9eb2e-6309-4f20-a61d-604fc1365b51": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910988058,
+      "endedAt": 1792910990065,
+      "files": {
+        "assets/js/world/stations2.js": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d0\\d03bf91ba96602464cdd9857e1eafbfdacd73f915fde3793778ced36d9c5cb01"
+        }
+      }
+    },
+    "53e8b701-2689-420e-aa14-49fa054cf14b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792910995918,
+      "endedAt": 1792910997924,
+      "files": {
+        "compositions/world.html": {
+          "before": null,
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4a\\4a3e2ae90eb5b886f3d06561d8229480a6d71a0eeca0ce8e23bd6d8cc3e20db0"
+        }
+      }
+    },
+    "abfd579d-e5e5-46ab-af5d-345e02bfe01d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911005477,
+      "endedAt": 1792911007478,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e5\\e5a939db6634a8d960f36569be40d0ee2ed170fbf5b85545b7fda7b362c3eb65",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8a\\8a3abd4460b80db26ff393c82570132821c7b8aa6e8f675dcdee25dccb34f05e"
+        }
+      }
+    },
+    "69fe97bb-7145-41d0-b0d6-c307597de629": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911131601,
+      "endedAt": 1792911133614,
+      "files": {
+        "compositions/world.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4a\\4a3e2ae90eb5b886f3d06561d8229480a6d71a0eeca0ce8e23bd6d8cc3e20db0",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\12\\12c1e5796ddd848d1c096677835b7064384529b58f9382f8368c95a0870cc795"
+        }
+      }
+    },
+    "4eaba6a5-fd88-4905-afd3-5ebba6cd6d7a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911239172,
+      "endedAt": 1792911241194,
+      "files": {
+        "assets/js/world/props.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9c\\9c6537a808c1a905bca4c8411062b4e5afcadf5c23035795961daf57ae968642",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\05\\05e6911e7eadb1905a532a5fedef24f848fa6cc775cf5dbc47e8235f058e4f9a"
+        },
+        "assets/js/world/stations.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\1d\\1d7ce5653bbe8966f3ef7ef27479008eaccc8ad28d64587a872b14116420ce5a",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0c\\0c180a7587dd439f1bba4b66d0528c112352edb0e2710c21d46659108ddc4df2"
+        }
+      }
+    },
+    "39e8faa1-a7ef-44d7-bba3-fde3490f2ea7": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911424935,
+      "endedAt": 1792911426944,
+      "files": {
+        "assets/js/world/stations2.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d0\\d03bf91ba96602464cdd9857e1eafbfdacd73f915fde3793778ced36d9c5cb01",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5c\\5cf934c8cca514f0d316c7a7588522392ba22f275448019b31790f1c10f9750c"
+        }
+      }
+    },
+    "6f4e6262-23f1-4ae1-bcfb-1a589a05025b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911457137,
+      "endedAt": 1792911459180,
+      "files": {
+        "assets/js/world/stations2.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5c\\5cf934c8cca514f0d316c7a7588522392ba22f275448019b31790f1c10f9750c",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9d\\9dfff26022a83594f81a5da9b7d2ff065aac00b6c315e7fb535b4289b1dde25f"
+        }
+      }
+    },
+    "40cf3c3b-8b0d-422e-9fdd-5802bd159314": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911630259,
+      "endedAt": 1792911632289,
+      "files": {
+        "assets/js/world/props.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\05\\05e6911e7eadb1905a532a5fedef24f848fa6cc775cf5dbc47e8235f058e4f9a",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\de\\de30107398fb54ebe328c55c869cd85f81db6206997e4a092402168e92b858f5"
+        },
+        "assets/js/world/stations.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0c\\0c180a7587dd439f1bba4b66d0528c112352edb0e2710c21d46659108ddc4df2",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\ac\\ac4a3592c9c843edc8c00592ba49e113ad15d61a1d24450a434f1ba8f2d4cc73"
+        },
+        "assets/js/world/stations2.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9d\\9dfff26022a83594f81a5da9b7d2ff065aac00b6c315e7fb535b4289b1dde25f",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f4\\f433a10772b341b377671509f9fb7b579a42cec8214d2660581d3ec9982fa6f8"
+        }
+      }
+    },
+    "bb6c7f31-bd75-4356-9a00-823f94fa21e8": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911793242,
+      "endedAt": 1792911795335,
+      "files": {
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a4\\a435cd358464544ea339878fa41dbd955153fd3775df5d36a42e4508d687847d",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7a\\7a114a82a45d3af52e87b40684ab46bb4a2007be5f6c28eb69737afe863c95e7"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\67\\67ffe9ca286794acce03bad45433ff4d3504a8d354d0977720dadb04ff56a513",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4f\\4f9b14d07803c537a93cc57414470719dcc615ec90e87d61ff038b9a238490d1"
+        },
+        "compositions/s03-ayah.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7d\\7dfd452946dcdeeb7108eba92da23e0d0f79cb6705f80688bb2612bf8fbb6ed7",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\6c\\6c76c79f50f709d20b4815e804535cf9cca1bf9531cf1e2395639dfc114c00da"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\09\\098d692c19456649668da382cf248afa5bb7f237ea520532e1f97e45991a49ee",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2e\\2ebeac77610aea2697234b6656d58179280781f1670df7760cc8fdd20904a7e5"
+        },
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8d\\8dd5a0ecf9bba4daf5b47561ede6bd359b3747635e503f996d12b86b3624eb87",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2b\\2bd40db895cf66515e8d976ef97239e9af55a8927fd38af38256cf284344e734"
+        },
+        "compositions/s06-away.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\72\\729109771e8f707e8537e8fe2f40c776c37d07cfebb51329a61d13c738d10714",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9c\\9c44c711c2599c2ff515fa0968d10fcc4dd215bb45edebf85b28c634a6ad1286"
+        },
+        "compositions/s07-away-example.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\0d\\0d6a1d9a98577decb524a5fae81e454b431a324afc60aefea565f5f62bc27b9c",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\ba\\ba70313a2d70c69c29c94d54b5e577ea54325fd49159c56947204f6125913ffc"
+        },
+        "compositions/s08-silent.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c0\\c036acce37513aa5c355b5a398c07f46ef4eb964dad4364612a71e32bbc27ee6",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\78\\781f28371090afd8b9104cd9bf02a170d14f31744be5101ddd8debdfc1d70453"
+        },
+        "compositions/s09-silent-ex.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\89\\89d26c25a2802e9f77777cf74b68c5963165eb031b73f45781c1f2c4ddeb0fe2",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cb\\cb8275f5b03c3a7c50deab4d11feccde54b134407dfd12d1de527e5f49b34e65"
+        },
+        "compositions/s10-replace.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\e6\\e64c633801b03532fbd2338ccaf0d8066357b5c8b53b1e23ff8d5b33c0ccb65f",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d1\\d1d1d78bc8564c2c54a68bfa7447958848e3e492a99450a5bcf39155921b2300"
+        },
+        "compositions/s11-dhuhr.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\b1\\b168195e26d1a35389a9771978b02b7cbfc5ab6a6bdd7aae9b228709d15c4c18",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f3\\f30d9d9a8dd14cbf155ed857ac69002cb633988431c6ee3fc57ec505f59e3eb6"
+        },
+        "compositions/s12-objection.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\c9\\c967a974b8994e3c8521e7a46dd7d2f687379eba578f1f8360727ea6b65eee83",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a8\\a838f029724787e19757f97887ae52e54532f2d23e85f10ed647188a0f13459f"
+        },
+        "compositions/s13-start-small.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8e\\8ee36fbcdad8869a0041cc2eb50639fec7d7ebb83ae2cfba45e6f5a6182e6169",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\13\\13dbd023610d62c998a4ca737968fc37046f63fe60db2af1eeaaadfdf234c2c1"
+        },
+        "compositions/s14-cta-dua.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a9\\a9237f3b1787be8d91ff0c57048da190196023c659eeb9753cdf4709f7d18e15",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\43\\430a6b128dcb68ab037bc114612b88abcb767ca0dea9f8d970e6fbf8ce1f6325"
+        },
+        "compositions/s15-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f2\\f2d4a16dd17d7d3eb7fbd84987d5c55bd1e60a8cc5500a151989915b824ea754",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\54\\54a53988bab8dea0a4eadb27e6e517c2b6d7988d965db225b4c95b8ea5f2fd0c"
+        }
+      }
+    },
+    "71974d06-3d0d-4143-aa80-77e528aa3ea6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911846433,
+      "endedAt": 1792911848435,
+      "files": {
+        "index.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8a\\8a3abd4460b80db26ff393c82570132821c7b8aa6e8f675dcdee25dccb34f05e",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\64\\64d78442e8d65ea7772cfd89a6839878f3f9453f8d683cb317a3a00f7d8c4ade"
+        }
+      }
+    },
+    "596210ca-4ba3-4f81-a466-8318d52502e5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792911951341,
+      "endedAt": 1792911953749,
+      "files": {
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2b\\2bd40db895cf66515e8d976ef97239e9af55a8927fd38af38256cf284344e734",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4a\\4aaa86f25d4532954b15ae27acc047aecb4ed5103145513912e1648c00d7f0a7"
+        },
+        "compositions/s14-cta-dua.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\43\\430a6b128dcb68ab037bc114612b88abcb767ca0dea9f8d970e6fbf8ce1f6325",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\00\\002d319a52188382366af942403efcd53fee4e1f90e27e774c52cdb5c28be2a5"
+        },
+        "index.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\64\\64d78442e8d65ea7772cfd89a6839878f3f9453f8d683cb317a3a00f7d8c4ade",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\13\\13204252b278547fc9e62fcd27d6e0ae0430d02b9f770587a680546a21bd78c4"
+        }
+      }
+    },
+    "bd47e51e-f168-41fc-8e62-4d3479a5a785": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792912067893,
+      "endedAt": 1792912070709,
+      "files": {
+        "assets/js/world/stations.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\ac\\ac4a3592c9c843edc8c00592ba49e113ad15d61a1d24450a434f1ba8f2d4cc73",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\40\\400e0335ed8c3cb3e8ad4987e4c0efb9d6299245966d38a5673115d9bad0b507"
+        },
+        "assets/js/world/stations2.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f4\\f433a10772b341b377671509f9fb7b579a42cec8214d2660581d3ec9982fa6f8",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\71\\712c05b6d58dd471aa519012c39f09f2d85043406a42bdeca34aa9b8b3a8abe7"
+        },
+        "compositions/s01-hook.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7a\\7a114a82a45d3af52e87b40684ab46bb4a2007be5f6c28eb69737afe863c95e7",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\04\\046791a2ffb05f966472bf7711b12be9e2ff544dd00c50fb7d2fe5775aafedb3"
+        },
+        "compositions/s02-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4f\\4f9b14d07803c537a93cc57414470719dcc615ec90e87d61ff038b9a238490d1",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a3\\a3a454b126f7f642c1627a4e25b62c45a1b356569ac02ac61ad9c8eabff602a6"
+        },
+        "compositions/s03-ayah.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\6c\\6c76c79f50f709d20b4815e804535cf9cca1bf9531cf1e2395639dfc114c00da",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\7e\\7ef61d93eb418e78e1432a013e892ff8d6243c8921257625c97abde1f5dec614"
+        },
+        "compositions/s04-khushu.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2e\\2ebeac77610aea2697234b6656d58179280781f1670df7760cc8fdd20904a7e5",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\05\\05c65823ae6cb0c8e6ec484c5e1dd3f9ff0e7fcc38ef6bb900cfd84f136546e0"
+        },
+        "compositions/s05-three-words.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4a\\4aaa86f25d4532954b15ae27acc047aecb4ed5103145513912e1648c00d7f0a7",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\24\\249ee2b4a70aa7ff21fee5aa37485409454878e4154cfae72ff92ab14a8390a7"
+        },
+        "compositions/s06-away.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\9c\\9c44c711c2599c2ff515fa0968d10fcc4dd215bb45edebf85b28c634a6ad1286",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\65\\65eb8170fce9c208a057083f08bef3ad41ecf4487acec554cb82aed656a01786"
+        },
+        "compositions/s07-away-example.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\ba\\ba70313a2d70c69c29c94d54b5e577ea54325fd49159c56947204f6125913ffc",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\5d\\5d9defd2d36b6ae84e2cb1913ea3463b4b0916d6b13adfaf97149366b858155b"
+        },
+        "compositions/s08-silent.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\78\\781f28371090afd8b9104cd9bf02a170d14f31744be5101ddd8debdfc1d70453",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\fd\\fdd3e03008375b8aaf6794e14e452277f6e1c8481687a4baf656deee5088b75a"
+        },
+        "compositions/s09-silent-ex.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cb\\cb8275f5b03c3a7c50deab4d11feccde54b134407dfd12d1de527e5f49b34e65",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\54\\540b4f340f271c1979196965d3fe0520d8a332dabcfb94829be4b4274c123aff"
+        },
+        "compositions/s10-replace.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\d1\\d1d1d78bc8564c2c54a68bfa7447958848e3e492a99450a5bcf39155921b2300",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bc\\bcf70787aaaa3869e1e55579a07c9243aac185ac99a63aad02edbdd406703732"
+        },
+        "compositions/s11-dhuhr.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\f3\\f30d9d9a8dd14cbf155ed857ac69002cb633988431c6ee3fc57ec505f59e3eb6",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a6\\a628ac79da71258d7cf1ee9952955e3bb206e515967a5b1b1afdb69161a0417e"
+        },
+        "compositions/s12-objection.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\a8\\a838f029724787e19757f97887ae52e54532f2d23e85f10ed647188a0f13459f",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\8a\\8a6efe0e3154e21a05eec6a7aa19be1c6a0c42456cc96bb99720c9b9f252873c"
+        },
+        "compositions/s13-start-small.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\13\\13dbd023610d62c998a4ca737968fc37046f63fe60db2af1eeaaadfdf234c2c1",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\bf\\bfc2ad69cee04b4b81a5ec3f1f5f0f549e5be5f31f8746e9c8a2588d24210597"
+        },
+        "compositions/s14-cta-dua.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\00\\002d319a52188382366af942403efcd53fee4e1f90e27e774c52cdb5c28be2a5",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cc\\cca11302d550f42e49a94c287fd690c193c5e984002d867d7a58ecca68964104"
+        },
+        "compositions/s15-salam.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\54\\54a53988bab8dea0a4eadb27e6e517c2b6d7988d965db225b4c95b8ea5f2fd0c",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\3e\\3e8cf6f909d628b0b55d540dc3f9fca055f5787bf62e9497bd3547c6cf2cfbed"
+        }
+      }
+    },
+    "7ebfd21e-93c8-4cb2-baea-04adc9c5a906": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792912100054,
+      "endedAt": 1792912102098,
+      "files": {
+        "assets/js/world/stations2.js": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\71\\712c05b6d58dd471aa519012c39f09f2d85043406a42bdeca34aa9b8b3a8abe7",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\4b\\4ba132aca9479c7c9caa361fb23d76792d3dc7916d200d88a4d383c429dafa84"
+        },
+        "compositions/s14-cta-dua.html": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\cc\\cca11302d550f42e49a94c287fd690c193c5e984002d867d7a58ecca68964104",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\2b\\2bbca04ae5dc285f9b37297aa26bed2652c46f6a8457ff2936d2fc9e4649c15f"
+        }
+      }
+    },
+    "84f452d7-9eeb-4964-a10c-ee1081ae1889": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1792912130171,
+      "endedAt": 1792912132186,
+      "files": {
+        "SPEC.md": {
+          "before": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\76\\76e6cc705563055b1dca972a2194fd3d34edc9aba577403fa3762ce03b6ae653",
+          "after": "C:\\Users\\Sagor\\.cache\\hyperframes\\history\\ecb087fe-8983-418f-abb9-dfb0c3fba210\\blobs\\80\\80ec83205db1d4b303d5f4cc16621b099f3451a47559e9b6b296782e6b353310"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "84f452d7-9eeb-4964-a10c-ee1081ae1889",
+      "id": "e560ffbd-1999-4988-93ef-ff39236da436"
+    },
+    "revisions": {
+      "66bcab71-bfa2-4539-b02f-ed6590fb3ef6": [
+        {
+          "id": "5dd1c407-1851-419a-b1ad-e5ed353ee77f",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\5dd1c407-1851-419a-b1ad-e5ed353ee77f.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792908274187,
+          "contentHash": "ea8df24c2cebee8458ae8c03ab7c6e9d027728710a2c941cc39632a2f32ddb00",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "bc208fba-bd93-4ecf-9b9a-eaee0b23911e": [
+        {
+          "id": "89223b7c-c3b6-4403-b639-039cc9ae87a0",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\89223b7c-c3b6-4403-b639-039cc9ae87a0.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792908387396,
+          "contentHash": "c097162ca7a38647adcb4c55ffae4d5ba787afd4377fb62efd854935b7aee2f8",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "36a9033f-313f-4ef6-81f3-62aea1a4b059",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\36a9033f-313f-4ef6-81f3-62aea1a4b059.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792908424424,
+          "contentHash": "c097162ca7a38647adcb4c55ffae4d5ba787afd4377fb62efd854935b7aee2f8",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "abfd579d-e5e5-46ab-af5d-345e02bfe01d": [
+        {
+          "id": "193e7911-135c-498c-b6da-3af40b37a39e",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\193e7911-135c-498c-b6da-3af40b37a39e.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792911117392,
+          "contentHash": "dd8a5e9a8bccfbc2761a96b59fce9d9ca69b11b6cf5a4aba27d0a513b182f1c3",
+          "revision": "abfd579d-e5e5-46ab-af5d-345e02bfe01d",
+          "inputFingerprint": "a5dc29a7c1ae105a38a8f9f3a331c97a4435ad82e24adb77bdd3d3e3f00a6624",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "71974d06-3d0d-4143-aa80-77e528aa3ea6": [
+        {
+          "id": "79f30d23-ac8f-41f5-bac6-d9dcaa6a0a79",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\79f30d23-ac8f-41f5-bac6-d9dcaa6a0a79.json",
+          "metadata": {
+            "ok": false,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792911932909,
+          "contentHash": "eb0807a0e359c8dfe4348ea3534f8d504f8abd35ea8e40a03812bf02f5fd17d2",
+          "revision": "71974d06-3d0d-4143-aa80-77e528aa3ea6",
+          "inputFingerprint": "9515e31d9226e5078fcfe5442815ab003397707d5528153721fb8ad7dcc8e8f2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "596210ca-4ba3-4f81-a466-8318d52502e5": [
+        {
+          "id": "38488135-f261-4a75-ad7b-495e302d6106",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\38488135-f261-4a75-ad7b-495e302d6106.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792911983709,
+          "contentHash": "2d20d03c3c1a5d63359551a967aa0bf55dca2bbc501394035354577b5570a5fd",
+          "revision": "596210ca-4ba3-4f81-a466-8318d52502e5",
+          "inputFingerprint": "14581172f2356dce3434be823ae86e8d8af32985e1c55cf315fa8dfea884daab",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "84f452d7-9eeb-4964-a10c-ee1081ae1889": [
+        {
+          "id": "e560ffbd-1999-4988-93ef-ff39236da436",
+          "scope": "project",
+          "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\e560ffbd-1999-4988-93ef-ff39236da436.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 3000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1792912159496,
+          "contentHash": "700f93a5506dca14d1352e767006b9c1460bd9e0a3c84fd2dba7f2a0d780fcec",
+          "revision": "84f452d7-9eeb-4964-a10c-ee1081ae1889",
+          "inputFingerprint": "66feebb57d8c0c6dd440fe5bae0ec589e39ee753005954a1cc4571bff02bfba4",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "bcc75a25-28af-45ad-8862-db29202dd483",
+        "scope": "project",
+        "report": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\checks\\bcc75a25-28af-45ad-8862-db29202dd483.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 3000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1792908247663,
+        "contentHash": "1b7b2c12b57cef706e76be8181667884b0f212943a6cd8f333f5a661f1643a1f",
+        "revision": null,
+        "inputFingerprint": "27c98c9253ef89a10c1bdea032e6959e1adb43ad9125c34c8387573b87bf05f4",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "7ebfd21e-93c8-4cb2-baea-04adc9c5a906",
+      "id": "45531a3a-7479-4ac1-a2ca-cf07b8e5d593-0"
+    },
+    "revisions": {
+      "66bcab71-bfa2-4539-b02f-ed6590fb3ef6": [
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-0",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-00-at-0.5s.png",
+          "time": 0.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284526,
+          "contentHash": "eb240340a3bb75bd80474895e8e2d86c82181c4512331177004ce1c99beeb12f",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-1",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-01-at-2s.png",
+          "time": 2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284526,
+          "contentHash": "e3ac2bce46c0e0a6c087e2d8213fd4031e0fb2dedabf70daac732b441d84e2b2",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-2",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-02-at-4s.png",
+          "time": 4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "f4e1c9beba8d3ced3a54ea0054fb4e6aa286f89659b80281f787e4c4db339b40",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-3",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-03-at-6s.png",
+          "time": 6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "285809c2f9c344868af374a258a7661227c63697bf8344d52b337232cc8f9878",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-4",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-04-at-9s.png",
+          "time": 9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "c50ac504ffb9f630a4eaa70deb59d521c594fccf8fe1afaec34fe369187e08f1",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-5",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-05-at-10.4s.png",
+          "time": 10.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "733928765bf01e0b4ba0bee8c1afcbe2cfec4ed98784d338689fc1b5b14b4257",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-6",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-06-at-12s.png",
+          "time": 12,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "2b469c33ad70549761c1fee7c748c946b23bd800c54b2e4322d11adc4d120a01",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-7",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-07-at-15s.png",
+          "time": 15,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "ecac6d8d2ef4bf74e1eab21e91c77785c30400df00d762e101d014d7e8bd52b3",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-8",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-08-at-19s.png",
+          "time": 19,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284527,
+          "contentHash": "c5a34c97a05d591b15773e7453bce6156d438a5439011a260fd8f575e3e7512f",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-9",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-09-at-21s.png",
+          "time": 21,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284528,
+          "contentHash": "e7dc2eab93fd5e1d1ef35909f6d6eb5b9a559ebb7bcf2a97ba39ada17f83346b",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-10",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-10-at-23s.png",
+          "time": 23,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284528,
+          "contentHash": "8052a33d5d58d5fae5cfff18fdba7b06e0d2471b236a8ab00c3c83e4cabf6f13",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-11",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-11-at-28s.png",
+          "time": 28,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284528,
+          "contentHash": "7dbea72fb44dd5ac3ff2edfa3de1ad85d4ef975457f80e0e2edfcfa02d7a9436",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-12",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-12-at-33s.png",
+          "time": 33,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284529,
+          "contentHash": "f591dbbfd058a4ed01daca8e599d8e9a35abb3544e2995be97fc80978405a945",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-13",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-13-at-36s.png",
+          "time": 36,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284529,
+          "contentHash": "7b27d6a3f896c3fd80c92b8faa9870619f2811cffc1902c1aee1664b29d4dcb3",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-14",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-14-at-40s.png",
+          "time": 40,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284529,
+          "contentHash": "62d0f6a1d01c6f919ca294de61551cf7923f569fbc2c5c4cffb2ce3f12e23daa",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-15",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-15-at-45s.png",
+          "time": 45,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284530,
+          "contentHash": "fdbfde05447c0a1cd0952dd5ca7b07b5f5daff4edbd2f6284b64c6d3a671ada6",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-16",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-16-at-47s.png",
+          "time": 47,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284530,
+          "contentHash": "ef8479998c7224badc6dd1bf180cc61c1b2c0cfc412fb18bc7a4ea0886da8fa2",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-17",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-17-at-50s.png",
+          "time": 50,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284531,
+          "contentHash": "74e4bc12586f3b76f84702f77a0df49e129b5cea26eb37d59774168e262b3235",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-18",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-18-at-54s.png",
+          "time": 54,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284531,
+          "contentHash": "5f6a63cca23a2bc1fc16f4a059df1a0ccfa5ba70fc8a478b6629026dfc36dd7d",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-19",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-19-at-56s.png",
+          "time": 56,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284532,
+          "contentHash": "97ee336f3bc51477c4ea0ad04eb98c9759909bc96dbee3cd54b742c97abf675b",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-20",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-20-at-58.5s.png",
+          "time": 58.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284532,
+          "contentHash": "76d3a5931265f54adad08a0c14f9d52f08577969d851cc4be3616888ffeb7fa0",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-21",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-21-at-59.5s.png",
+          "time": 59.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284532,
+          "contentHash": "9892e48cd0d51813e05ea1fad45d53995cbdf870535166144dea85bcc7aaaace",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-22",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-22-at-60.8s.png",
+          "time": 60.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284533,
+          "contentHash": "be6f25806ab00e3878f105e566b6f9479da08f5bf5e53ebbbbde9198237c1862",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-23",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-23-at-61.5s.png",
+          "time": 61.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284534,
+          "contentHash": "ad892b0fb8375f9f556af9b1fbbf8ed6440297d4686c1c837e228edf04808e7b",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "ad7890f8-5785-47eb-979a-0188f378cbb5-24",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\e6c23d3e-1e03-4ae4-99e8-2fae970bcdda\\frame-24-at-189.732s.png",
+          "time": 189.732,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908284534,
+          "contentHash": "e3d9120bfe1ae31485e29e7bf484ef53cef7d40a1b4919141810f66d5c1e7e24",
+          "revision": "66bcab71-bfa2-4539-b02f-ed6590fb3ef6",
+          "inputFingerprint": "9d5fec7f4591b4d88b629190d715a7602cabb2efee7d6ae56ae7a6ca1b9c879b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3": [
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-0",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-00-at-13.5s.png",
+          "time": 13.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348551,
+          "contentHash": "f8aa36dcb9026eb409af4b307d8c2448ac2f373729c979df23289332fe975559",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-1",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-01-at-16s.png",
+          "time": 16,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348553,
+          "contentHash": "96c6578497974f8ef7e8b2dfd4dcf48c786a3a8cfaa9151ac70ecadc120452de",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-2",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-02-at-20.5s.png",
+          "time": 20.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348554,
+          "contentHash": "3533f547825b870a1e716ebc9dea7b4438986f832deccc676de798de04ca2688",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-3",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-03-at-40s.png",
+          "time": 40,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348555,
+          "contentHash": "732da852f10fea443f5ad4d0b1b4c848b64814ec52454fda26bbfe16c8f8e33f",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-4",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-04-at-41.5s.png",
+          "time": 41.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348556,
+          "contentHash": "a907454d10ba4fa72c692b680c93101d2802f1fa99c373a64e21aac99f80280e",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-5",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-05-at-47s.png",
+          "time": 47,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348558,
+          "contentHash": "8f148fdfe2f08b0c9247a7d803a24a0050758855ae0ea53baeb383189dc57b15",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-6",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-06-at-60.5s.png",
+          "time": 60.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348559,
+          "contentHash": "eca9410ae932907efeaf09ead7c73de112acf244cfc921f6b736c9e897043f51",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "fe9019d2-cda9-44ae-a8c1-8beb118156aa-7",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7ef6c00a-da76-4853-888b-0d652d9ec203\\frame-07-at-189.732s.png",
+          "time": 189.732,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908348560,
+          "contentHash": "e3d9120bfe1ae31485e29e7bf484ef53cef7d40a1b4919141810f66d5c1e7e24",
+          "revision": "5cdaed4e-b0a5-44af-ad6d-99a5104ab6e3",
+          "inputFingerprint": "bb09bc7eeb45c1b9dd9928f142a5fd86b18ebb504d21ebc57027209feb0c0f6b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "bc208fba-bd93-4ecf-9b9a-eaee0b23911e": [
+        {
+          "scope": "full",
+          "id": "c839b817-2bd0-415c-91ad-6fbc95f86fae-0",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7507099a-a32f-43e0-a73a-ff4e70a5c5f9\\frame-00-at-10.8s.png",
+          "time": 10.8,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908394440,
+          "contentHash": "3fc6a86c75c2b036c3469328f87b69910350d68abab22b2cad8a60535e103124",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c839b817-2bd0-415c-91ad-6fbc95f86fae-1",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7507099a-a32f-43e0-a73a-ff4e70a5c5f9\\frame-01-at-16s.png",
+          "time": 16,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908394443,
+          "contentHash": "d2f3f5248fd542197dff920ed29dc21a6972776fa2c9f409e646b3a5fb79879b",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c839b817-2bd0-415c-91ad-6fbc95f86fae-2",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7507099a-a32f-43e0-a73a-ff4e70a5c5f9\\frame-02-at-41s.png",
+          "time": 41,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908394448,
+          "contentHash": "ea4cc092a65d37852ba8b83afceafb85aa3677ee80c1906e6590aa8f5ff59d3b",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c839b817-2bd0-415c-91ad-6fbc95f86fae-3",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\video\\.hyperframes\\artifacts\\snapshots\\7507099a-a32f-43e0-a73a-ff4e70a5c5f9\\frame-03-at-189.732s.png",
+          "time": 189.732,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792908394450,
+          "contentHash": "e3d9120bfe1ae31485e29e7bf484ef53cef7d40a1b4919141810f66d5c1e7e24",
+          "revision": "bc208fba-bd93-4ecf-9b9a-eaee0b23911e",
+          "inputFingerprint": "1befb98acf653e6d32752c49fd5adcbb4cafd80611e9cda7d1a154184054b5e7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "268624b9-ae6e-45d8-b04a-e76a7a6b1451": [
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-0",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-00-at-3s.png",
+          "time": 3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292444,
+          "contentHash": "4c03fa190dc37f508b17998ab4b0c071a28096af0456210bcffeee43e08cb2f3",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-1",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-01-at-32s.png",
+          "time": 32,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292446,
+          "contentHash": "914ee7d65c20c0defa04010638b195c653d2bae4a08559ae3ef4bfd92e021762",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-2",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-02-at-58s.png",
+          "time": 58,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292447,
+          "contentHash": "7b0c806d77b50f3b73b79e3a02068aace60bdbee57e16c5c0fe1f281ffac4c35",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-3",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-03-at-91s.png",
+          "time": 91,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292449,
+          "contentHash": "b4a7a923570b789c4fef59d0e4979783a8ae7abf5fcbc4072233ffe58cbed2a4",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-4",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-04-at-116s.png",
+          "time": 116,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292450,
+          "contentHash": "e3d9120bfe1ae31485e29e7bf484ef53cef7d40a1b4919141810f66d5c1e7e24",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "c21ea32b-522f-487f-ad01-0720bdc91bf0-5",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_old_snaps\\frame-05-at-170s.png",
+          "time": 170,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792910292451,
+          "contentHash": "816af69146a619bdb36f0893d2058c3ecb544b0f7c6f592036556f1572070744",
+          "revision": "268624b9-ae6e-45d8-b04a-e76a7a6b1451",
+          "inputFingerprint": "124b89e1a23f1c6c995c5e6c356097b90ac486413acb8cdbe9b8f520f2a2acaf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "abfd579d-e5e5-46ab-af5d-345e02bfe01d": [],
+      "69fe97bb-7145-41d0-b0d6-c307597de629": [],
+      "6f4e6262-23f1-4ae1-bcfb-1a589a05025b": [],
+      "596210ca-4ba3-4f81-a466-8318d52502e5": [],
+      "bd47e51e-f168-41fc-8e62-4d3479a5a785": [],
+      "7ebfd21e-93c8-4cb2-baea-04adc9c5a906": [
+        {
+          "scope": "full",
+          "id": "45531a3a-7479-4ac1-a2ca-cf07b8e5d593-0",
+          "image": "F:\\Islamic vide\\How to Focus in Salah Put Your Phone Down in 3 Steps\\_snaps\\frame-00-at-179.6s.png",
+          "time": 179.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1792912115594,
+          "contentHash": "f41e844019cc24cb74b10ca890bad57bf6490a72c95607d690d3fcfd3095074c",
+          "revision": "7ebfd21e-93c8-4cb2-baea-04adc9c5a906",
+          "inputFingerprint": "fe8ef6e9878558b96a39ffe24fa22335125ee088b09b3c7377150cd67e36bc5e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  }
+}

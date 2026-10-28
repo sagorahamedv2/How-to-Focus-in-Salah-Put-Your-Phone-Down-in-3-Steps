@@ -1,0 +1,1272 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 17
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "console_warning",
+        "severity": "warning",
+        "message": "THREE.WebGLProgram: Program Info Log: (221,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(220,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(221,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(220,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(221,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(207,10-67): warning X4008: floating point division by zero\n(207,10-67): warning X4008: floating point division by zero\n(207,10-67): warning X4008: floating point division by zero\n\n\n\u0000",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {
+          "data-hf-id": "hf-x5sh",
+          "data-composition-id": "main",
+          "data-start": "0",
+          "data-duration": "195.6",
+          "data-width": "1920",
+          "data-height": "1080"
+        },
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "time": 0,
+        "url": "https://cdn.jsdelivr.net/npm/three@0.181.2/build/three.core.js",
+        "line": 1769
+      }
+    ]
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 21,
+    "findings": [
+      {
+        "code": "canvas_content_at_edge",
+        "severity": "warning",
+        "time": 10.867,
+        "selector": "#world-canvas",
+        "message": "Canvas content touches the frame edge (right).",
+        "rect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "containerSelector": "#root",
+        "fixHint": "Keep drawn text inside the visible part of the canvas, or mark intentional full-bleed art with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "dataAttributes": {
+          "data-engine": "three.js r181"
+        },
+        "sourceFile": "compositions/world.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080
+        },
+        "firstSeen": 10.867,
+        "lastSeen": 163,
+        "occurrences": 6,
+        "heldMs": 0,
+        "times": [
+          10.867,
+          54.333,
+          76.067,
+          119.533,
+          141.267,
+          163
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.867,
+        "selector": "#s02-st",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 160,
+          "top": -260,
+          "right": 1760,
+          "bottom": 500,
+          "width": 1600,
+          "height": 760
+        },
+        "containerSelector": "#s02-salam > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s02-salam.html",
+        "bbox": {
+          "x": 160,
+          "y": -260,
+          "width": 1600,
+          "height": 760
+        },
+        "firstSeen": 10.867,
+        "lastSeen": 10.867,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.867
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 10.867,
+        "selector": "#s02-st",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 160,
+          "top": -260,
+          "right": 1760,
+          "bottom": 500,
+          "width": 1600,
+          "height": 760
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s02-salam.html",
+        "bbox": {
+          "x": 160,
+          "y": -260,
+          "width": 1600,
+          "height": 760
+        },
+        "firstSeen": 10.867,
+        "lastSeen": 10.867,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.867
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 32.6,
+        "selector": "#s03-st",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 160,
+          "top": -120,
+          "right": 1760,
+          "bottom": 860,
+          "width": 1600,
+          "height": 980
+        },
+        "containerSelector": "#s03-ayah > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s03-ayah.html",
+        "bbox": {
+          "x": 160,
+          "y": -120,
+          "width": 1600,
+          "height": 980
+        },
+        "firstSeen": 32.6,
+        "lastSeen": 32.6,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.6
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 32.6,
+        "selector": "#s03-st",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 160,
+          "top": -120,
+          "right": 1760,
+          "bottom": 860,
+          "width": 1600,
+          "height": 980
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s03-ayah.html",
+        "bbox": {
+          "x": 160,
+          "y": -120,
+          "width": 1600,
+          "height": 980
+        },
+        "firstSeen": 32.6,
+        "lastSeen": 32.6,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          32.6
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 54.333,
+        "selector": "#s04-sc",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -260,
+          "top": 520,
+          "right": 1440,
+          "bottom": 1340,
+          "width": 1700,
+          "height": 820
+        },
+        "containerSelector": "#s04-khushu > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 260,
+          "bottom": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s04-khushu.html",
+        "bbox": {
+          "x": -260,
+          "y": 520,
+          "width": 1700,
+          "height": 820
+        },
+        "firstSeen": 54.333,
+        "lastSeen": 54.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.333
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 54.333,
+        "selector": "#s04-sc",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -260,
+          "top": 520,
+          "right": 1440,
+          "bottom": 1340,
+          "width": 1700,
+          "height": 820
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 260,
+          "bottom": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s04-khushu.html",
+        "bbox": {
+          "x": -260,
+          "y": 520,
+          "width": 1700,
+          "height": 820
+        },
+        "firstSeen": 54.333,
+        "lastSeen": 54.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          54.333
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 70.267,
+        "selector": "#s06-chip > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 150.8,
+          "top": 99,
+          "right": 165.19,
+          "bottom": 140,
+          "width": 14.39,
+          "height": 41
+        },
+        "containerSelector": "#s07-chip > span:nth-of-type(1)",
+        "text": "1",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s06-away.html",
+        "bbox": {
+          "x": 150.8,
+          "y": 99,
+          "width": 14.39,
+          "height": 41
+        },
+        "firstSeen": 70.267,
+        "lastSeen": 70.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          70.267
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 70.267,
+        "selector": "#s06-chip > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 202,
+          "top": 85,
+          "right": 364.53,
+          "bottom": 154,
+          "width": 162.53,
+          "height": 69
+        },
+        "containerSelector": "#s07-chip > span:nth-of-type(2)",
+        "text": "Away.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s06-away.html",
+        "bbox": {
+          "x": 202,
+          "y": 85,
+          "width": 162.53,
+          "height": 69
+        },
+        "firstSeen": 70.267,
+        "lastSeen": 70.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          70.267
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 99.167,
+        "selector": "#s08-chip > span:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 147.41,
+          "top": 99,
+          "right": 168.59,
+          "bottom": 140,
+          "width": 21.18,
+          "height": 41
+        },
+        "containerSelector": "#s09-chip > span:nth-of-type(1)",
+        "text": "2",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s08-silent.html",
+        "bbox": {
+          "x": 147.41,
+          "y": 99,
+          "width": 21.18,
+          "height": 41
+        },
+        "firstSeen": 99.167,
+        "lastSeen": 99.167,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          99.167
+        ]
+      },
+      {
+        "code": "content_overlap",
+        "severity": "info",
+        "time": 99.167,
+        "selector": "#s08-chip > span:nth-of-type(2)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 202,
+          "top": 85,
+          "right": 375.11,
+          "bottom": 154,
+          "width": 173.11,
+          "height": 69
+        },
+        "containerSelector": "#s09-chip > span:nth-of-type(2)",
+        "text": "Silent.",
+        "fixHint": "Give each block its own zone, or put data-layout-allow-overlap on the text or on a container inside the scene. A marker on the scene root does not apply.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/s08-silent.html",
+        "bbox": {
+          "x": 202,
+          "y": 85,
+          "width": 173.11,
+          "height": 69
+        },
+        "firstSeen": 99.167,
+        "lastSeen": 99.167,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          99.167
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(2) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 386.88,
+          "top": 833.8,
+          "right": 576.97,
+          "bottom": 927.88,
+          "width": 190.09,
+          "height": 94.08
+        },
+        "containerSelector": "#s11-c1 > span:nth-of-type(2)",
+        "text": "your",
+        "fixHint": "Text is 190px x 94px inside 198px x 102px and overflows by up to 13px; increase the container height to at least ~116px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 386.88,
+          "top": 812,
+          "right": 585.36,
+          "bottom": 914.47,
+          "width": 198.48,
+          "height": 102.47
+        },
+        "overflow": {
+          "bottom": 13.41
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 386.88,
+          "y": 833.8,
+          "width": 190.09,
+          "height": 94.08
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(3) > b:nth-of-type(1)",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 585.36,
+          "top": 857.44,
+          "right": 758.58,
+          "bottom": 951.52,
+          "width": 173.22,
+          "height": 94.08
+        },
+        "containerSelector": "#s11-c1 > span:nth-of-type(3)",
+        "text": "own",
+        "fixHint": "Text is 173px x 94px inside 182px x 102px and overflows by up to 37px; increase the container height to at least ~140px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 585.36,
+          "top": 812,
+          "right": 766.97,
+          "bottom": 914.47,
+          "width": 181.61,
+          "height": 102.47
+        },
+        "overflow": {
+          "bottom": 37.05
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 585.36,
+          "y": 857.44,
+          "width": 173.22,
+          "height": 94.08
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(3) > b:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 585.36,
+          "top": 852.98,
+          "right": 758.58,
+          "bottom": 955.98,
+          "width": 173.22,
+          "height": 103
+        },
+        "containerSelector": "#s11-sc",
+        "text": "own",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 0.33,
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 585.36,
+          "y": 852.98,
+          "width": 173.22,
+          "height": 103
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "text_occluded",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(4) > b:nth-of-type(1)",
+        "message": "Text is hidden beneath an opaque element.",
+        "rect": {
+          "left": 766.97,
+          "top": 891.74,
+          "right": 992.64,
+          "bottom": 994.74,
+          "width": 225.67,
+          "height": 103
+        },
+        "containerSelector": "#s11-sc",
+        "text": "times",
+        "fixHint": "Give the text its own zone, raise its stacking order above the covering element, or mark intentional layering with data-layout-allow-occlusion.",
+        "coveredFraction": 1,
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 766.97,
+          "y": 891.74,
+          "width": 225.67,
+          "height": 103
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-sc",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -260,
+          "top": 520,
+          "right": 1440,
+          "bottom": 1340,
+          "width": 1700,
+          "height": 820
+        },
+        "containerSelector": "#s11-dhuhr > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 260,
+          "bottom": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": -260,
+          "y": 520,
+          "width": 1700,
+          "height": 820
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(2) > b:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 386.88,
+          "top": 834.34,
+          "right": 576.97,
+          "bottom": 928.41,
+          "width": 190.09,
+          "height": 94.08
+        },
+        "containerSelector": "#s11-c1 > span:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 386.88,
+          "top": 812,
+          "right": 585.36,
+          "bottom": 914.47,
+          "width": 198.48,
+          "height": 102.47
+        },
+        "overflow": {
+          "bottom": 13.94
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 386.88,
+          "y": 834.34,
+          "width": 190.09,
+          "height": 94.08
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(3) > b:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 585.36,
+          "top": 857.98,
+          "right": 758.58,
+          "bottom": 952.06,
+          "width": 173.22,
+          "height": 94.08
+        },
+        "containerSelector": "#s11-c1 > span:nth-of-type(3)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 585.36,
+          "top": 812,
+          "right": 766.97,
+          "bottom": 914.47,
+          "width": 181.61,
+          "height": 102.47
+        },
+        "overflow": {
+          "bottom": 37.59
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 585.36,
+          "y": 857.98,
+          "width": 173.22,
+          "height": 94.08
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-c1 > span:nth-of-type(4) > b:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 766.97,
+          "top": 896.74,
+          "right": 992.64,
+          "bottom": 990.81,
+          "width": 225.67,
+          "height": 94.08
+        },
+        "containerSelector": "#s11-c1 > span:nth-of-type(4)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 766.97,
+          "top": 812,
+          "right": 1001.03,
+          "bottom": 914.47,
+          "width": 234.06,
+          "height": 102.47
+        },
+        "overflow": {
+          "bottom": 76.34
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": 766.97,
+          "y": 896.74,
+          "width": 225.67,
+          "height": 94.08
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 141.267,
+        "selector": "#s11-sc",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": -260,
+          "top": 520,
+          "right": 1440,
+          "bottom": 1340,
+          "width": 1700,
+          "height": 820
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "left": 260,
+          "bottom": 260
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s11-dhuhr.html",
+        "bbox": {
+          "x": -260,
+          "y": 520,
+          "width": 1700,
+          "height": 820
+        },
+        "firstSeen": 141.267,
+        "lastSeen": 141.267,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          141.267
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 184.733,
+        "selector": "#s14-st",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 160,
+          "top": -120,
+          "right": 1760,
+          "bottom": 860,
+          "width": 1600,
+          "height": 980
+        },
+        "containerSelector": "#s14-cta-dua > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s14-cta-dua.html",
+        "bbox": {
+          "x": 160,
+          "y": -120,
+          "width": 1600,
+          "height": 980
+        },
+        "firstSeen": 184.733,
+        "lastSeen": 184.733,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          184.733
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 184.733,
+        "selector": "#s14-st",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 160,
+          "top": -120,
+          "right": 1760,
+          "bottom": 860,
+          "width": 1600,
+          "height": 980
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1080,
+          "width": 1920,
+          "height": 1080
+        },
+        "overflow": {
+          "top": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/s14-cta-dua.html",
+        "bbox": {
+          "x": 160,
+          "y": -120,
+          "width": 1600,
+          "height": 980
+        },
+        "firstSeen": 184.733,
+        "lastSeen": 184.733,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          184.733
+        ]
+      }
+    ],
+    "duration": 195.6,
+    "samples": [
+      10.867,
+      32.6,
+      54.333,
+      76.067,
+      97.8,
+      119.533,
+      141.267,
+      163,
+      184.733
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 22,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      10.867,
+      54.333,
+      97.8,
+      141.267,
+      184.733
+    ],
+    "checked": 12,
+    "passed": 12
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 14,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 5.55 s (0.00–5.55 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "seconds": 5.551,
+        "floorSeconds": 3,
+        "until": 5.551
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 7.84 s (14.04–21.88 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 14.041,
+        "seconds": 7.837,
+        "floorSeconds": 3,
+        "until": 21.878
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.59 s (31.35–34.94 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 31.348,
+        "seconds": 3.592,
+        "floorSeconds": 3,
+        "until": 34.94
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 10.78 s (42.78–53.55 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 42.777,
+        "seconds": 10.776,
+        "floorSeconds": 3,
+        "until": 53.553
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 7.51 s (73.15–80.66 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 73.146,
+        "seconds": 7.51,
+        "floorSeconds": 3,
+        "until": 80.656
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 4.57 s (85.23–89.80 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 85.228,
+        "seconds": 4.572,
+        "floorSeconds": 3,
+        "until": 89.8
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.27 s (95.35–98.62 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 95.351,
+        "seconds": 3.265,
+        "floorSeconds": 3,
+        "until": 98.616
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.27 s (99.60–102.86 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 99.596,
+        "seconds": 3.265,
+        "floorSeconds": 3,
+        "until": 102.861
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 9.47 s (105.47–114.94 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 105.474,
+        "seconds": 9.47,
+        "floorSeconds": 3,
+        "until": 114.944
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.92 s (125.72–129.64 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 125.72,
+        "seconds": 3.918,
+        "floorSeconds": 3,
+        "until": 129.638
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 9.14 s (131.60–140.74 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 131.597,
+        "seconds": 9.144,
+        "floorSeconds": 3,
+        "until": 140.741
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.27 s (146.62–149.88 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 146.618,
+        "seconds": 3.266,
+        "floorSeconds": 3,
+        "until": 149.884
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 5.88 s (161.97–167.84 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 161.966,
+        "seconds": 5.878,
+        "floorSeconds": 3,
+        "until": 167.844
+      },
+      {
+        "code": "dead_stretch",
+        "severity": "warning",
+        "message": "Nothing on screen changes for 3.53 s (189.07–192.60 s): start the next move within 3 s, or put data-hold on the element whose stillness is deliberate; see references/motion.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 189.069,
+        "seconds": 3.531,
+        "floorSeconds": 3,
+        "until": 192.6
+      }
+    ],
+    "enabled": true,
+    "step": 0.3269999999999982,
+    "samples": 599
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

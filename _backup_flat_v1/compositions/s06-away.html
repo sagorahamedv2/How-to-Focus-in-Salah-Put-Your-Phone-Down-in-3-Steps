@@ -1,0 +1,147 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; direction: rtl; letter-spacing: 0; line-height: 1.9; white-space: nowrap; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s06-world { position: absolute; left: 0; top: 0; width: 3840px; height: 1080px; }
+    #s06-room2 { position: absolute; left: 1920px; top: 0; width: 1920px; height: 1080px; }
+    #s06-hayya { position: absolute; left: 650px; top: 90px; width: 1000px; text-align: center; font-size: 96px; color: var(--sand-100); opacity: 0; }
+    #s06-cover { position: absolute; inset: 0; background: var(--emerald-950); }
+  </style>
+  <div data-hf-id="hf-duiz" id="root" data-composition-id="s06-away" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-8339" id="s06-world">
+      <!-- hallway -->
+      <div data-hf-id="hf-dkmp" class="wall" style="width:1920px;"></div>
+      <div data-hf-id="hf-42vf" class="floor" style="width:1920px;"></div>
+      <div data-hf-id="hf-io5q" class="base" style="width:1920px;"></div>
+
+      <div data-hf-id="hf-cpk0" class="abs" style="left:220px;top:130px;width:300px;height:430px;background:var(--sand-300);border-radius:150px 150px 8px 8px;"></div>
+      <div data-hf-id="hf-t8vm" class="abs" style="left:236px;top:146px;width:268px;height:398px;background:var(--emerald-950);border-radius:134px 134px 4px 4px;overflow:hidden;">
+        <div data-hf-id="hf-h9v6" class="abs" style="left:0;top:0;width:268px;height:398px;background:var(--emerald-800);opacity:0.9;"></div>
+        <svg data-hf-id="hf-9209" id="s06-min" class="abs" style="left:94px;top:90px;transform-origin:50% 100%;" width="84" height="294" viewBox="0 0 120 420"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/><path data-hf-id="hf-jgm6" d="M60 350 q16 10 16 30 v40 h-32 v-40 q0 -20 16 -30z" fill="#0B3D33"/></svg>
+      </div>
+
+      <!-- wall shelf with the phone -->
+      <div data-hf-id="hf-mx2g" class="abs" style="left:100px;top:640px;width:320px;height:22px;background:var(--sand-500);border-radius:4px;"></div>
+      <div data-hf-id="hf-99jr" class="abs" style="left:130px;top:662px;width:12px;height:40px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-bnbl" class="abs" style="left:378px;top:662px;width:12px;height:40px;background:var(--sand-500);"></div>
+      <svg data-hf-id="hf-t3gm" id="s06-phone" class="abs" style="left:140px;top:200px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-kgsn" id="s06-pglow" x="24" y="30" width="192" height="380" rx="24" fill="#FFD98A" opacity="0"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/><circle data-hf-id="hf-sey8" id="s06-pdot" cx="196" cy="62" r="14" fill="#E26D4F" opacity="0"/></svg>
+
+      <!-- doorway to the next room -->
+      <div data-hf-id="hf-qm3s" id="s06-doorglow" class="abs glow" style="left:900px;top:400px;width:500px;height:500px;opacity:0.35;"></div>
+      <div data-hf-id="hf-0n4u" class="abs" style="left:1000px;top:300px;width:300px;height:580px;background:var(--sand-300);border-radius:8px 8px 0 0;"></div>
+      <div data-hf-id="hf-7oy4" class="abs" style="left:1016px;top:316px;width:268px;height:564px;background:var(--emerald-950);border-radius:4px 4px 0 0;"></div>
+      <div data-hf-id="hf-ctsv" id="s06-slide" class="abs" style="left:1016px;top:316px;width:268px;height:564px;background:var(--emerald-600);border-radius:4px 4px 0 0;">
+        <div data-hf-id="hf-gjw3" class="abs" style="left:20px;top:20px;width:228px;height:524px;border:4px solid var(--emerald-800);border-radius:4px;"></div>
+        <div data-hf-id="hf-hcla" class="abs" style="left:28px;top:280px;width:22px;height:22px;border-radius:50%;background:var(--sand-300);"></div>
+      </div>
+
+      <!-- prayer mat with a phone face down on it -->
+      <div data-hf-id="hf-m5e5" class="abs" style="left:1440px;top:880px;width:400px;height:140px;">
+        <svg data-hf-id="hf-dcor" width="400" height="140" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-exyd" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="6"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/></svg>
+      </div>
+      <div data-hf-id="hf-v4vm" class="abs" style="left:1540px;top:906px;width:200px;height:20px;background:var(--emerald-950);border-radius:8px;">
+        <div data-hf-id="hf-n0fc" class="abs" style="left:150px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--grey-dim);"></div>
+      </div>
+      <svg data-hf-id="hf-awbn" id="s06-cross" class="abs" style="left:1480px;top:780px;" width="320" height="220" viewBox="0 0 320 220" fill="none" stroke="#E26D4F" stroke-width="10" stroke-linecap="round">
+        <path data-hf-id="hf-hpb3" id="s06-x1" d="M30 20 L290 200" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/>
+        <path data-hf-id="hf-h72s" id="s06-x2" d="M290 20 L30 200" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1;"/>
+      </svg>
+
+      <!-- next room -->
+      <div data-hf-id="hf-wckk" id="s06-room2">
+        <div data-hf-id="hf-a9vw" class="wall"></div>
+        <div data-hf-id="hf-kk9u" class="floor"></div>
+        <div data-hf-id="hf-9327" class="base"></div>
+        <div data-hf-id="hf-6mzl" class="abs" style="left:1300px;top:180px;width:300px;height:430px;background:var(--sand-300);border-radius:150px 150px 8px 8px;"></div>
+        <div data-hf-id="hf-e7yb" class="abs" style="left:1316px;top:196px;width:268px;height:398px;background:var(--emerald-950);border-radius:134px 134px 4px 4px;overflow:hidden;">
+          <div data-hf-id="hf-66t2" class="abs" style="left:0;top:0;width:268px;height:398px;background:var(--emerald-800);opacity:0.9;"></div>
+        </div>
+        <div data-hf-id="hf-zaxl" id="s06-lamp2" class="abs glow" style="left:560px;top:380px;width:760px;height:760px;opacity:0.45;"></div>
+        <svg data-hf-id="hf-bxwn" id="s06-phone2" class="abs" style="left:820px;top:200px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-su86" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-j98b" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-so9o" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/></svg>
+        <div data-hf-id="hf-boo2" class="abs" style="left:680px;top:640px;width:520px;height:16px;background:var(--sand-300);border-radius:4px;"></div>
+        <div data-hf-id="hf-q5m8" class="abs" style="left:700px;top:656px;width:480px;height:224px;background:var(--sand-500);"></div>
+        <div data-hf-id="hf-oi44" id="s06-drawer" class="abs" style="left:724px;top:680px;width:432px;height:90px;background:var(--sand-300);border-radius:6px;">
+          <div data-hf-id="hf-8aks" class="abs" style="left:176px;top:36px;width:80px;height:12px;border-radius:6px;background:var(--sand-500);"></div>
+        </div>
+        <div data-hf-id="hf-7hyl" class="abs" style="left:724px;top:790px;width:432px;height:70px;background:var(--sand-300);border-radius:6px;">
+          <div data-hf-id="hf-04or" class="abs" style="left:176px;top:28px;width:80px;height:12px;border-radius:6px;background:var(--sand-500);"></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-y5ps" id="s06-hayya" class="ar" dir="rtl" lang="ar">حَيَّ عَلَى الصَّلَاةِ</div>
+    <div data-hf-id="hf-4m36" id="s06-c1" class="callout">Another room</div>
+    <div data-hf-id="hf-gnbg" id="s06-cover">
+      <div data-hf-id="hf-aqq4" class="abs" style="left:360px;top:120px;width:1200px;height:840px;background:var(--emerald-600);border-radius:8px;"></div>
+      <div data-hf-id="hf-txh6" class="abs" style="left:400px;top:160px;width:1120px;height:760px;border:6px solid var(--emerald-800);border-radius:4px;"></div>
+      <div data-hf-id="hf-2v8a" class="abs" style="left:1450px;top:530px;width:40px;height:40px;border-radius:50%;background:var(--sand-300);"></div>
+    </div>
+  </div>
+  <script>
+    // Host starts at frame 1845 (9 frames before the cut at 1854).
+    const O = 1845, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    gsap.set("#s06-phone2", { scale: 0.45, opacity: 0 });
+    gsap.set("#s06-phone", { scale: 0.45 });
+    gsap.set("#s06-hayya", { y: 16 });
+    gsap.set("#s06-c1", { y: 24 });
+
+    // f1851 door-slide: the door that "Away" walked into slides open onto the hallway (18 frames)
+    tl.to("#s06-cover", { x: -1920, duration: F(18), ease: GLIDE }, T(1848));
+    tl.to("#s06-doorglow", { opacity: 0.8, duration: F(45), ease: BREATH, repeat: 5, yoyo: true }, 0);
+
+    // f1863 "adhan": the minaret pulses once
+    tl.to("#s06-min", { scale: 1.08, duration: F(10), ease: SETTLE, yoyo: true, repeat: 1 }, T(1863));
+
+    // f1889 "hayya ala as-salah": Arabic fades over the doorway, holds 36 frames, leaves
+    tl.to("#s06-hayya", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(1889));
+    tl.to("#s06-hayya", { opacity: 0, duration: F(10), ease: EXIT }, T(1889 + 12 + 36));
+
+    // f1949 "come to prayer": the phone lights up
+    tl.to("#s06-pglow", { opacity: 0.5, duration: F(15), ease: SETTLE }, T(1949));
+    tl.to("#s06-pdot", { opacity: 1, duration: F(8), ease: SETTLE }, T(1949));
+
+    // f1992 HERO "another room": the phone slides through the doorway, the door slides shut behind it
+    tl.to("#s06-phone", { x: 890, y: 150, scale: 0.3, duration: F(28), ease: "power2.inOut" }, T(1992));
+    tl.to("#s06-phone", { opacity: 0, duration: F(6), ease: EXIT }, T(1992 + 22));
+    tl.fromTo("#s06-slide", { x: 280 }, { x: 0, duration: F(14), ease: GLIDE, immediateRender: false }, T(1992 + 20));
+
+    // f2016 "Not face down on the mat": phone lies face down on the mat, crossed out in alert red
+    tl.to("#s06-x1", { strokeDashoffset: 0, duration: F(12), ease: SETTLE }, T(2016));
+    tl.to("#s06-x2", { strokeDashoffset: 0, duration: F(12), ease: SETTLE }, T(2016 + 6));
+    tl.to("#s06-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(2016));
+    tl.to("#s06-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(2016 + 12 + 40));
+
+    // f2072 "another room" again: the cross clears and the camera pans to the other room
+    tl.to(["#s06-x1", "#s06-x2"], { opacity: 0, duration: F(10), ease: EXIT }, T(2070));
+    tl.to("#s06-world", { x: -1920, duration: F(36), ease: GLIDE }, T(2072));
+    tl.to("#s06-lamp2", { opacity: 0.8, duration: F(45), ease: BREATH, repeat: 3, yoyo: true }, T(2072));
+
+    // the phone lands on the cabinet, then slips into the drawer
+    tl.fromTo("#s06-phone2", { y: -60, opacity: 0 }, { y: 0, opacity: 1, duration: F(15), ease: SETTLE, immediateRender: false }, T(2092));
+
+    window.__timelines["s06-away"] = tl;
+  </script>
+</template>

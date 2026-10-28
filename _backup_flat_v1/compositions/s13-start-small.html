@@ -1,0 +1,134 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s13-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    .s13-lg { position: absolute; top: 210px; width: 400px; height: 400px; opacity: 0.7; }
+    .s13-lamp { position: absolute; top: 308px; width: 140px; height: 252px; }
+    .s13-lbl { position: absolute; top: 580px; width: 200px; text-align: center; font: 600 32px/1.2 "Inter", sans-serif; color: var(--sand-100); }
+    .s13-step { position: absolute; top: 190px; width: 56px; height: 56px; border-radius: 50%; border: 4px solid var(--sand-300); font: 600 32px/48px "Inter", sans-serif; text-align: center; color: var(--sand-100); opacity: 0; }
+    #s13-away { position: absolute; left: 360px; top: 90px; width: 600px; text-align: center; font: 700 220px/1 "Fraunces", serif; letter-spacing: -2px; color: var(--gold); white-space: nowrap; opacity: 0; transform-origin: 50% 50%; }
+    .s13-tile { position: absolute; top: 905px; width: 146px; height: 48px; background: var(--sand-500); border-radius: 6px; }
+    .s13-ob { position: absolute; top: 826px; width: 76px; height: 76px; border-radius: 12px; background: var(--emerald-600); border: 4px solid var(--emerald-950); }
+  </style>
+  <div data-hf-id="hf-s4pv" id="root" data-composition-id="s13-start-small" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-u6qj" id="s13-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+
+      <!-- five prayer lamps -->
+      <div data-hf-id="hf-tyco" class="s13-lg glow" id="s13-g0" style="left:160px;"></div>
+      <div data-hf-id="hf-k8ey" class="s13-lg glow" id="s13-g1" style="left:460px;"></div>
+      <div data-hf-id="hf-0q68" class="s13-lg glow" id="s13-g2" style="left:760px;"></div>
+      <div data-hf-id="hf-tpgn" class="s13-lg glow" id="s13-g3" style="left:1060px;"></div>
+      <div data-hf-id="hf-u7p7" class="s13-lg glow" id="s13-g4" style="left:1360px;"></div>
+
+      <svg data-hf-id="hf-2zji" class="s13-lamp" id="s13-lp0" style="left:290px;" viewBox="0 0 200 360"><path data-hf-id="hf-7yac" class="sh" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-0ibg" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-xlwh" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+      <svg data-hf-id="hf-snci" class="s13-lamp" id="s13-lp1" style="left:590px;" viewBox="0 0 200 360"><path data-hf-id="hf-ao30" class="sh" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-bar8" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-zfat" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+      <svg data-hf-id="hf-69nm" class="s13-lamp" id="s13-lp2" style="left:890px;" viewBox="0 0 200 360"><path data-hf-id="hf-9h5x" class="sh" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-a3u5" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-0m7w" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+      <svg data-hf-id="hf-j1f3" class="s13-lamp" id="s13-lp3" style="left:1190px;" viewBox="0 0 200 360"><path data-hf-id="hf-9vgy" class="sh" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-ai56" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-07wv" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+      <svg data-hf-id="hf-wc3p" class="s13-lamp" id="s13-lp4" style="left:1490px;" viewBox="0 0 200 360"><path data-hf-id="hf-bv03" class="sh" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-chob" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-1ety" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+
+      <div data-hf-id="hf-h3j5" class="s13-lbl" id="s13-l0" style="left:260px;">Fajr</div>
+      <div data-hf-id="hf-rpa1" class="s13-lbl" id="s13-l1" style="left:560px;">Dhuhr</div>
+      <div data-hf-id="hf-l3h2" class="s13-lbl" id="s13-l2" style="left:860px;">Asr</div>
+      <div data-hf-id="hf-rg6r" class="s13-lbl" id="s13-l3" style="left:1160px;">Maghrib</div>
+      <div data-hf-id="hf-b9ta" class="s13-lbl" id="s13-l4" style="left:1460px;">Isha</div>
+
+      <div data-hf-id="hf-hmny" class="s13-step" id="s13-s1" style="left:830px;">1</div>
+      <div data-hf-id="hf-04mx" class="s13-step" id="s13-s2" style="left:910px;">2</div>
+      <div data-hf-id="hf-h6vh" class="s13-step" id="s13-s3" style="left:990px;">3</div>
+
+      <div data-hf-id="hf-bval" id="s13-away">Away.</div>
+
+      <!-- anchor -->
+      <svg data-hf-id="hf-qbky" id="s13-anchor" class="abs" style="left:572px;top:488px;opacity:0;" width="66" height="74" viewBox="0 0 80 90" fill="none" stroke="#F4EAD5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><circle data-hf-id="hf-bdtf" cx="40" cy="12" r="8"/><path data-hf-id="hf-n2fe" d="M40 20 V78 M24 34 H56 M8 56 Q12 78 40 80 Q68 78 72 56"/></svg>
+
+      <!-- the path from the lit lamp to the mat -->
+      <div data-hf-id="hf-4roe" class="s13-tile" id="s13-t1" style="left:780px;"></div>
+      <div data-hf-id="hf-ckly" class="s13-tile" id="s13-t2" style="left:936px;"></div>
+      <div data-hf-id="hf-o0h7" class="s13-tile" id="s13-t3" style="left:1092px;"></div>
+      <div data-hf-id="hf-4u9j" class="s13-tile" id="s13-t4" style="left:1248px;"></div>
+      <div data-hf-id="hf-8l8e" class="s13-tile" id="s13-t5" style="left:1404px;"></div>
+      <div data-hf-id="hf-2v6l" class="s13-ob" id="s13-o1" style="left:1010px;"></div>
+      <div data-hf-id="hf-iydr" class="s13-ob" id="s13-o2" style="left:1190px;"></div>
+      <div data-hf-id="hf-d9h0" class="s13-ob" id="s13-o3" style="left:1370px;"></div>
+      <div data-hf-id="hf-6yho" class="abs" style="left:1580px;top:900px;width:280px;height:112px;">
+        <svg data-hf-id="hf-o1ym" width="280" height="112" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-euib" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="8"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/></svg>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-9ai6" id="s13-c1" class="callout">Just step one</div>
+    <div data-hf-id="hf-76qk" id="s13-c2" class="callout">Clear the path</div>
+  </div>
+  <script>
+    // Host starts at frame 4835 (9 frames before the cut at 4844).
+    const O = 4835, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+    const others = [0, 2, 3, 4];
+
+    gsap.set("#s13-away", { y: 24 });
+    gsap.set(["#s13-c1", "#s13-c2"], { y: 24 });
+    gsap.set("#s13-anchor", { y: -420 });
+
+    // Camera pull to the row of prayer lamps (match cut from the timetable)
+    tl.fromTo("#s13-world", { scale: 1.06, opacity: 0 }, { scale: 1, opacity: 1, duration: F(18), ease: GLIDE }, 0);
+    tl.to("#s13-world", { scale: 1.02, duration: T(5297), ease: "none" }, F(18));
+    // lamp breath ends just before the lamps are dimmed at f4916
+    tl.to([".s13-lg"], { opacity: 1, duration: F(40), ease: BREATH, repeat: 1, yoyo: true }, 0);
+
+    // f4868 "all three tomorrow": three small step marks appear above the row and fade
+    ["#s13-s1", "#s13-s2", "#s13-s3"].forEach((s, i) => {
+      tl.fromTo(s, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: F(10), ease: SETTLE, immediateRender: false }, T(4868 + i * 5));
+    });
+    tl.to(["#s13-s1", "#s13-s2", "#s13-s3"], { opacity: 0, duration: F(10), ease: EXIT }, T(4900));
+
+    // f4916 HERO "pick one prayer": four lamps dim, Dhuhr stays lit
+    others.forEach((n) => {
+      tl.to("#s13-g" + n, { opacity: 0, duration: F(20), ease: "power2.inOut" }, T(4916));
+      tl.to("#s13-lp" + n + " .sh", { attr: { fill: "#5B6B66" }, duration: F(20), ease: "power2.inOut" }, T(4916));
+      tl.to("#s13-l" + n, { opacity: 0.4, duration: F(20), ease: "power2.inOut" }, T(4916));
+    });
+
+    // f4949 "the one you rush the most": the lit lamp pulses once
+    tl.to("#s13-g1", { scale: 1.25, duration: F(14), ease: BREATH, yoyo: true, repeat: 1 }, T(4949));
+
+    // f5043 "Away": gold AWAY above the lit lamp, then it shrinks under it; callout "Just step one"
+    tl.to("#s13-away", { opacity: 1, y: 0, duration: F(18), ease: SNAP }, T(5043));
+    tl.to("#s13-away", { scale: 0.3, y: 465, duration: F(24), ease: GLIDE }, T(5068));
+    tl.to("#s13-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(5043));
+    tl.to("#s13-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(5043 + 12 + 75));
+
+    // f5173 "anchor": a small anchor drops onto the lit lamp's base
+    tl.to("#s13-anchor", { opacity: 1, y: 0, duration: F(14), ease: "power2.in" }, T(5173));
+    tl.to("#s13-anchor", { y: -6, duration: F(5), ease: SETTLE, yoyo: true, repeat: 1 }, T(5173 + 14));
+
+    // f5225 "clearing the path": the tiles light, the objects slide off the floor
+    tl.to(".s13-tile", { background: "#7FC4AE", duration: F(12), ease: SETTLE, stagger: F(4) }, T(5225));
+    tl.to(".s13-ob", { y: 260, opacity: 0, duration: F(22), ease: EXIT, stagger: F(6) }, T(5228));
+    tl.to("#s13-c2", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(5225));
+
+    window.__timelines["s13-start-small"] = tl;
+  </script>
+</template>

@@ -1,0 +1,118 @@
+<template>
+  <style>
+      @font-face { font-family: "Amiri"; font-weight: 700; src: url("assets/fonts/amiri-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("assets/fonts/noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 600; src: url("assets/fonts/fraunces-latin-600-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-weight: 700; src: url("assets/fonts/fraunces-latin-700-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 400; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-weight: 600; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+      #root {
+        position: absolute; inset: 0; overflow: hidden;
+        --emerald-950: #06211C; --emerald-800: #0B3D33; --emerald-600: #14705C; --emerald-300: #7FC4AE;
+        --sand-100: #F4EAD5; --sand-300: #E3CFA6; --sand-500: #B99A68; --lamp: #FFD98A;
+        --gold: #D9A441; --alert: #E26D4F; --grey-dim: #5B6B66;
+        background: var(--emerald-950); color: var(--sand-100); font-family: "Inter", sans-serif;
+      }
+      #root * { box-sizing: border-box; }
+      .abs { position: absolute; }
+      .wall { position: absolute; left: 0; top: 0; width: 1920px; height: 880px; background: var(--emerald-800); }
+      .floor { position: absolute; left: 0; top: 888px; width: 1920px; height: 192px; background: var(--sand-300); }
+      .base { position: absolute; left: 0; top: 872px; width: 1920px; height: 16px; background: var(--emerald-950); }
+      .callout { position: absolute; left: 192px; top: 756px; padding-left: 28px; border-left: 8px solid var(--emerald-300);
+        font: 600 84px/1.1 "Fraunces", serif; color: var(--sand-100); white-space: nowrap; opacity: 0; }
+      .ar { font-family: "Amiri", "Noto Naskh Arabic", serif; font-weight: 700; direction: rtl; letter-spacing: 0; line-height: 1.9; white-space: nowrap; }
+      .ar span { display: inline-block; }
+      .glow { border-radius: 50%; background: radial-gradient(circle, rgba(255,217,138,0.55) 0%, rgba(255,217,138,0) 65%); }
+    #s01-world { position: absolute; inset: 0; transform-origin: 50% 60%; }
+  </style>
+  <div data-hf-id="hf-hwjl" id="root" data-composition-id="s01-hook" data-width="1920" data-height="1080">
+    <div data-hf-id="hf-94gu" id="s01-world">
+      <div data-hf-id="hf-a9vw" class="wall"></div>
+      <div data-hf-id="hf-kk9u" class="floor"></div>
+      <div data-hf-id="hf-9327" class="base"></div>
+
+      <!-- window with minaret -->
+      <div data-hf-id="hf-cpk0" class="abs" style="left:220px;top:130px;width:300px;height:430px;background:var(--sand-300);border-radius:150px 150px 8px 8px;"></div>
+      <div data-hf-id="hf-t8vm" class="abs" style="left:236px;top:146px;width:268px;height:398px;background:var(--emerald-950);border-radius:134px 134px 4px 4px;overflow:hidden;">
+        <div data-hf-id="hf-903i" id="s01-winlight" class="abs" style="left:0;top:0;width:268px;height:398px;background:var(--emerald-800);opacity:0;"></div>
+        <svg data-hf-id="hf-u8nh" class="abs" style="left:94px;top:90px;" width="84" height="294" viewBox="0 0 120 420"><path data-hf-id="hf-76n6" d="M60 0 q10 18 10 30 h-20 q0 -12 10 -30z" fill="#E3CFA6"/><rect data-hf-id="hf-vduw" x="48" y="30" width="24" height="40" fill="#E3CFA6"/><rect data-hf-id="hf-n2zc" x="36" y="70" width="48" height="12" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-vfv9" x="46" y="82" width="28" height="240" fill="#E3CFA6"/><rect data-hf-id="hf-cvj9" x="30" y="170" width="60" height="10" rx="3" fill="#E3CFA6"/><rect data-hf-id="hf-6bnt" x="20" y="320" width="80" height="100" fill="#E3CFA6"/><path data-hf-id="hf-jgm6" d="M60 350 q16 10 16 30 v40 h-32 v-40 q0 -20 16 -30z" fill="#0B3D33"/></svg>
+      </div>
+
+      <!-- wall clock -->
+      <svg data-hf-id="hf-ayd2" id="s01-clock" class="abs" style="left:740px;top:120px;" width="240" height="240" viewBox="0 0 300 300"><circle data-hf-id="hf-msqx" cx="150" cy="150" r="140" fill="#F4EAD5" stroke="#B99A68" stroke-width="10"/><g data-hf-id="hf-94gw" stroke="#06211C" stroke-width="6" stroke-linecap="round"><path data-hf-id="hf-f1h0" d="M150 26v22M150 252v22M26 150h22M252 150h22"/></g><line data-hf-id="hf-yacy" id="s01-hour" x1="150" y1="150" x2="150" y2="92" stroke="#06211C" stroke-width="10" stroke-linecap="round"/><line data-hf-id="hf-s95r" id="s01-minute" x1="150" y1="150" x2="150" y2="52" stroke="#06211C" stroke-width="6" stroke-linecap="round"/><circle data-hf-id="hf-kt1n" cx="150" cy="150" r="9" fill="#E26D4F"/></svg>
+
+      <!-- shelf, lamp -->
+      <div data-hf-id="hf-ctvh" class="abs" style="left:1180px;top:640px;width:560px;height:24px;background:var(--sand-500);border-radius:4px;"></div>
+      <div data-hf-id="hf-7jtm" class="abs" style="left:1230px;top:664px;width:16px;height:70px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-j44q" class="abs" style="left:1670px;top:664px;width:16px;height:70px;background:var(--sand-500);"></div>
+      <div data-hf-id="hf-kc6b" id="s01-lampglow" class="abs glow" style="left:1480px;top:300px;width:420px;height:420px;opacity:0.5;"></div>
+      <svg data-hf-id="hf-ehoj" class="abs" style="left:1590px;top:442px;" width="110" height="198" viewBox="0 0 200 360"><path data-hf-id="hf-g2tq" d="M60 30 h80 l30 110 h-140z" fill="#E3CFA6"/><rect data-hf-id="hf-0ibg" x="96" y="140" width="8" height="150" fill="#B99A68"/><ellipse data-hf-id="hf-xlwh" cx="100" cy="310" rx="56" ry="14" fill="#B99A68"/></svg>
+
+      <!-- phone screen glow on wall -->
+      <div data-hf-id="hf-mtaj" id="s01-wallglow" class="abs glow" style="left:926px;top:20px;width:900px;height:900px;opacity:0;"></div>
+
+      <!-- phone -->
+      <svg data-hf-id="hf-3q0s" id="s01-phone" class="abs" style="left:1256px;top:200px;transform-origin:50% 100%;" width="240" height="440" viewBox="0 0 240 440"><rect data-hf-id="hf-33mq" x="10" y="10" width="220" height="420" rx="36" fill="#06211C"/><rect data-hf-id="hf-ck3f" x="24" y="30" width="192" height="380" rx="24" fill="#0B3D33"/><rect data-hf-id="hf-v090" id="s01-pglow" x="24" y="30" width="192" height="380" rx="24" fill="#FFD98A" opacity="0"/><rect data-hf-id="hf-2dr8" x="92" y="38" width="56" height="10" rx="5" fill="#06211C"/><circle data-hf-id="hf-t607" id="s01-pdot" cx="196" cy="62" r="14" fill="#E26D4F" opacity="0"/></svg>
+
+      <!-- hand (wrist only), flipped so fingers point left -->
+      <svg data-hf-id="hf-7fkq" id="s01-hand" class="abs" style="left:1380px;top:520px;" width="260" height="200" viewBox="0 0 260 200"><path data-hf-id="hf-zly1" d="M30 70 h70 l40 -40 q14 -14 28 0 q10 10 0 22 l-20 20 h50 q20 0 20 20 q0 20 -20 20 h-30 q20 0 20 20 q0 20 -20 20 h-30 q16 0 16 18 q0 18 -18 18 h-76 l-50 -20z" fill="#E3CFA6"/><rect data-hf-id="hf-u00z" x="0" y="50" width="30" height="100" fill="#0B3D33"/></svg>
+
+      <!-- prayer mat -->
+      <div data-hf-id="hf-y7rd" id="s01-matwrap" class="abs" style="left:1000px;top:896px;width:560px;height:150px;transform-origin:0 50%;">
+        <svg data-hf-id="hf-fioh" width="560" height="150" viewBox="0 0 520 320" preserveAspectRatio="none"><rect data-hf-id="hf-yl6n" x="10" y="10" width="500" height="300" rx="14" fill="#14705C"/><rect data-hf-id="hf-exyd" x="34" y="34" width="452" height="252" rx="8" fill="none" stroke="#E3CFA6" stroke-width="6"/><path data-hf-id="hf-01wp" d="M260 70 q70 30 70 90 v90 h-140 v-90 q0 -60 70 -90z" fill="#0B3D33"/><path data-hf-id="hf-t9lb" d="M260 100 q38 22 38 62 v70 h-76 v-70 q0 -40 38 -62z" fill="#14705C"/></svg>
+        <svg data-hf-id="hf-4i74" id="s01-fold" class="abs" style="right:0;top:0;" width="110" height="80" viewBox="0 0 110 80"><polygon data-hf-id="hf-jj34" points="0,0 110,0 110,80" fill="#0B3D33"/><polygon data-hf-id="hf-3e8c" points="0,0 110,80 40,70" fill="#14705C" opacity="0.6"/></svg>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-5sc0" id="s01-c1" class="callout">20 minutes later</div>
+    <div data-hf-id="hf-20nd" id="s01-veil" class="abs" style="inset:0;background:var(--emerald-950);"></div>
+  </div>
+  <script>
+    // Local clock: host starts at frame 0. T(frame) -> seconds, F(frames) -> seconds.
+    const O = 0, T = (f) => (f - O) / 30, F = (n) => n / 30;
+    const tl = gsap.timeline({ paused: true });
+    const SETTLE = "power3.out", EXIT = "power2.in", GLIDE = "power2.inOut", BREATH = "sine.inOut", SNAP = "back.out(1.4)";
+
+    // Initial states
+    gsap.set("#s01-phone", { scale: 0.45 });
+    gsap.set("#s01-hand", { scaleX: -1, x: 700 });
+    gsap.set("#s01-matwrap", { scaleX: 0, rotation: -6 });
+    gsap.set("#s01-c1", { y: 24 });
+
+    // Dim hallway fades up, ambient lamp breath, slow push
+    tl.to("#s01-veil", { opacity: 0, duration: F(24), ease: "power2.out" }, 0);
+    tl.to("#s01-lampglow", { opacity: 0.85, duration: F(45), ease: BREATH, repeat: 6, yoyo: true }, 0);
+    tl.fromTo("#s01-world", { scale: 1 }, { scale: 1.02, duration: T(326), ease: "none" }, 0);
+
+    // f4 "Adhan": phone lights up
+    tl.fromTo("#s01-pglow", { opacity: 0 }, { opacity: 0.85, duration: F(10), ease: SETTLE }, T(4));
+    tl.fromTo("#s01-pdot", { opacity: 0, scale: 0.2, transformOrigin: "196px 62px" }, { opacity: 1, scale: 1, duration: F(10), ease: SNAP }, T(4));
+    tl.fromTo("#s01-wallglow", { opacity: 0 }, { opacity: 0.35, duration: F(14), ease: SETTLE }, T(4));
+
+    // f40 "one minute": hand enters from the right edge and reaches
+    tl.to("#s01-hand", { x: 0, duration: F(15), ease: SETTLE }, T(40));
+
+    // f100 "pick up your phone": phone lifts with the hand, screen glow grows on the wall
+    tl.to("#s01-phone", { scale: 1, y: 50, duration: F(24), ease: GLIDE }, T(100));
+    tl.to("#s01-hand", { y: 50, duration: F(24), ease: GLIDE }, T(100));
+    tl.to("#s01-wallglow", { opacity: 0.95, duration: F(30), ease: SETTLE }, T(100));
+    tl.to("#s01-pglow", { opacity: 1, duration: F(20), ease: SETTLE }, T(100));
+
+    // f170 HERO "Twenty minutes later": clock hands spin +20 min (linear, the one allowed use)
+    tl.fromTo("#s01-minute", { rotation: 0, svgOrigin: "150 150" }, { rotation: 840, svgOrigin: "150 150", duration: F(40), ease: "none" }, T(170));
+    tl.fromTo("#s01-hour", { rotation: 0, svgOrigin: "150 150" }, { rotation: 70, svgOrigin: "150 150", duration: F(40), ease: "none" }, T(170));
+    tl.to("#s01-c1", { opacity: 1, y: 0, duration: F(12), ease: SETTLE }, T(170));
+    tl.to("#s01-c1", { opacity: 0, duration: F(10), ease: EXIT }, T(170 + 12 + 60));
+
+    // f213 "rush": mat unrolls crooked, corner folded
+    tl.to("#s01-matwrap", { scaleX: 1, duration: F(18), ease: SETTLE }, T(213));
+
+    // f262 hand lets go, glow dims to a single window light (the hand-off)
+    tl.to("#s01-hand", { x: 700, duration: F(18), ease: EXIT }, T(262));
+    tl.to("#s01-wallglow", { opacity: 0, duration: F(30), ease: "power2.inOut" }, T(262));
+    tl.to("#s01-pglow", { opacity: 0.35, duration: F(30), ease: "power2.inOut" }, T(262));
+    tl.to("#s01-winlight", { opacity: 0.9, duration: F(30), ease: "power2.inOut" }, T(268));
+
+    window.__timelines["s01-hook"] = tl;
+  </script>
+</template>

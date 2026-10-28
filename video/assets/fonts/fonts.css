@@ -1,0 +1,9 @@
+/* Arabic: Amiri (Quran/du'a), Noto Naskh Arabic (fallback/UI). Latin: Fraunces (display), Inter (body). */
+@font-face { font-family: "Amiri"; font-weight: 400; src: url("amiri-arabic-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Amiri"; font-weight: 700; src: url("amiri-arabic-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Noto Naskh Arabic"; font-weight: 400; src: url("noto-naskh-arabic-arabic-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Noto Naskh Arabic"; font-weight: 700; src: url("noto-naskh-arabic-arabic-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 600; src: url("fraunces-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 700; src: url("fraunces-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 400; src: url("inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("inter-latin-600-normal.woff2") format("woff2"); }
