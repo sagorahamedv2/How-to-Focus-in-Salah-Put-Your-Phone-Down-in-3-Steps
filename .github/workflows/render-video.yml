@@ -1,0 +1,46 @@
+name: Render Video
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'video/**'
+      - 'Script.txt'
+      - '.github/workflows/render-video.yml'
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      
+      - name: Install dependencies
+        working-directory: ./video
+        run: npm ci || npm install
+      
+      - name: Check project
+        working-directory: ./video
+        run: npm run check
+      
+      - name: Render video
+        working-directory: ./video
+        run: npm run render
+      
+      - name: Upload render
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-video
+          path: video/renders/*.mp4
+          retention-days: 30
